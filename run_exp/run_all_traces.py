@@ -1,21 +1,27 @@
 import os
 import time
 import json
-import urllib
+import urllib.request as url
 import subprocess
 
 
-TRACE_PATH = '../cooked_traces/' 
+def dp(msg):
+	dbg = os.getenv('DEBUG_MODE')
+	if dbg:
+		print("DEBUG: " + msg)
 
-with open('./chrome_retry_log', 'wb') as f:
+
+TRACE_PATH = './mahimahi_test_traces/' 
+
+with open('./chrome_retry_log', 'a') as f:
 	f.write('chrome retry log\n')
 
 os.system('sudo sysctl -w net.ipv4.ip_forward=1')
 
-ip_data = json.loads(urllib.urlopen("http://ip.jsontest.com/").read())
+ip_data = json.loads(url.urlopen("http://ip.jsontest.com/").read())
 ip = str(ip_data['ip'])
 
-ABR_ALGO = 'BB'
+""" ABR_ALGO = 'BB'
 PROCESS_ID = 0
 command_BB = 'python run_traces.py ' + TRACE_PATH + ' ' + ABR_ALGO + ' ' + str(PROCESS_ID) + ' ' + ip
 
@@ -42,12 +48,12 @@ command_fastMPC = 'python run_traces.py ' + TRACE_PATH + ' ' + ABR_ALGO + ' ' + 
 ABR_ALGO = 'robustMPC'
 PROCESS_ID = 6
 command_robustMPC = 'python run_traces.py ' + TRACE_PATH + ' ' + ABR_ALGO + ' ' + str(PROCESS_ID) + ' ' + ip
-
+ """
 ABR_ALGO = 'RL'
 PROCESS_ID = 7
-command_RL = 'python run_traces.py ' + TRACE_PATH + ' ' + ABR_ALGO + ' ' + str(PROCESS_ID) + ' ' + ip
+command_RL = 'python3.6 -u run_traces.py ' + TRACE_PATH + ' ' + ABR_ALGO + ' ' + str(PROCESS_ID) + ' ' + ip
 
-proc_BB = subprocess.Popen(command_BB, stdout=subprocess.PIPE, shell=True)
+""" proc_BB = subprocess.Popen(command_BB, stdout=subprocess.PIPE, shell=True)
 time.sleep(0.1)
 proc_RB = subprocess.Popen(command_RB, stdout=subprocess.PIPE, shell=True)
 time.sleep(0.1)
@@ -60,15 +66,17 @@ time.sleep(0.1)
 proc_fastMPC = subprocess.Popen(command_fastMPC, stdout=subprocess.PIPE, shell=True)
 time.sleep(0.1)
 proc_robustMPC = subprocess.Popen(command_robustMPC, stdout=subprocess.PIPE, shell=True)
-time.sleep(0.1)
+time.sleep(0.1) """
+
+dp(f"running command: {command_RL}")
 proc_RL = subprocess.Popen(command_RL, stdout=subprocess.PIPE, shell=True)
 time.sleep(0.1)
 
-proc_BB.wait()
+""" proc_BB.wait()
 proc_RB.wait()
 proc_FIXED.wait()
 proc_FESTIVE.wait()
 proc_BOLA.wait()
 proc_fastMPC.wait()
-proc_robustMPC.wait()
+proc_robustMPC.wait() """
 proc_RL.wait()

@@ -1,0 +1,38 @@
+DEBUG:__main__:copy over the chrome user dir...
+-------- [ 25-06-2022 18:47 ] --------
+DEBUG:__main__:copy over the chrome user dir...
+DEBUG:__main__:start abr algorithm server...
+DEBUG:__main__:starting display...
+DEBUG:pyvirtualdisplay.abstractdisplay:command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x600x24', '-displayfd', '7']
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=:0
+DEBUG:__main__:display started...
+DEBUG:__main__:initialize chrome driver
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56793/session {"desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "javascriptEnabled": true, "chromeOptions": {"extensions": [], "args": ["--user-data-dir=/tmp/chrome_user_dir_id_69", "--ignore-certificate-errors", "--disable-web-security"]}}, "requiredCapabilities": {}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:chrome driver initialized...
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56793/session/7e426d3515f19612618be4985351b715/timeouts {"ms": 10000.0, "type": "page load", "sessionId": "7e426d3515f19612618be4985351b715"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:page parameters set
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:56793/session/7e426d3515f19612618be4985351b715/url {"url": "http://10.10.1.1/myindex_RL.html", "sessionId": "7e426d3515f19612618be4985351b715"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:got url
+DEBUG:__main__:sleeping for 320 seconds
+-------- [ 25-06-2022 18:50 ] --------
+DEBUG:__main__:copy over the chrome user dir...
+DEBUG:__main__:start abr algorithm server...
+DEBUG:__main__:starting display...
+DEBUG:pyvirtualdisplay.abstractdisplay:command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x600x24', '-displayfd', '7']
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=:0
+DEBUG:__main__:display started...
+DEBUG:__main__:initialize chrome driver
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:37571/session {"desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "javascriptEnabled": true, "chromeOptions": {"extensions": [], "args": ["--user-data-dir=/tmp/chrome_user_dir_id_69", "--ignore-certificate-errors", "--disable-web-security", "--autoplay-policy=no-user-gesture-required"]}}, "requiredCapabilities": {}}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:chrome driver initialized...
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:37571/session/0975acc4aac1c5f291c455e39b78cca0/timeouts {"ms": 10000.0, "type": "page load", "sessionId": "0975acc4aac1c5f291c455e39b78cca0"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:page parameters set
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:37571/session/0975acc4aac1c5f291c455e39b78cca0/url {"url": "http://10.10.1.1/myindex_RL.html", "sessionId": "0975acc4aac1c5f291c455e39b78cca0"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:got url
+DEBUG:__main__:sleeping for 320 seconds
+-------- [ 25-06-2022 20:28 ] --------

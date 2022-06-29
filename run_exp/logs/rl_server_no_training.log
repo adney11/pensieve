@@ -1,0 +1,1302 @@
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+-------- [ 26-06-2022 15:29 ] --------
+-------- [ 26-06-2022 15:30 ] --------
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+-------- [ 26-06-2022 15:33 ] --------
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+-------- [ 26-06-2022 15:38 ] --------
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+-------- [ 26-06-2022 15:50 ] --------
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+ERROR:__main__:Keyboard interrupted.
+-------- [ 26-06-2022 15:51 ] --------
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+INFO:__main__:{'nextChunkSize': [2123065, 1431809, 957685, 611087, 398865, 155580], 'lastquality': 1, 'buffer': 4, 'bufferAdjusted': -0.5499999999999998, 'bandwidthEst': 433.6941969660487, 'lastRequest': 0, 'RebufferTime': 8447, 'lastChunkFinishTime': 1656276745274, 'lastChunkStartTime': 1656276736968, 'lastChunkSize': 450283}
+INFO:__main__:{'nextChunkSize': [2177073, 1300868, 877771, 571051, 350812, 139857], 'lastquality': 0, 'buffer': 4.413252, 'bufferAdjusted': -0.1367480000000003, 'bandwidthEst': 336.6126646145029, 'lastRequest': 1, 'RebufferTime': 10356, 'lastChunkFinishTime': 1656276750781, 'lastChunkStartTime': 1656276745724, 'lastChunkSize': 155580}
+INFO:__main__:{'nextChunkSize': [2160877, 1520281, 933276, 617681, 382355, 155432], 'lastquality': 0, 'buffer': 4.317598, 'bufferAdjusted': -0.232402, 'bandwidthEst': 307.46430664428254, 'lastRequest': 2, 'RebufferTime': 12367, 'lastChunkFinishTime': 1656276756888, 'lastChunkStartTime': 1656276752326, 'lastChunkSize': 139857}
+INFO:__main__:{'nextChunkSize': [2233056, 1472558, 996749, 652874, 411561, 163442], 'lastquality': 0, 'buffer': 4.323035999999998, 'bufferAdjusted': -0.22696400000000194, 'bandwidthEst': 306.94674658094095, 'lastRequest': 3, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276763314, 'lastChunkStartTime': 1656276759233, 'lastChunkSize': 155432}
+INFO:__main__:{'nextChunkSize': [1941625, 1224260, 801058, 520315, 318564, 126289], 'lastquality': 0, 'buffer': 5.237824999999999, 'bufferAdjusted': 0.6878249999999984, 'bandwidthEst': 319.87153727911647, 'lastRequest': 4, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276766396, 'lastChunkStartTime': 1656276763728, 'lastChunkSize': 163442}
+INFO:__main__:{'nextChunkSize': [2157535, 1388403, 905515, 561791, 352642, 153295], 'lastquality': 0, 'buffer': 7.1335409999999975, 'bufferAdjusted': 2.5835409999999968, 'bandwidthEst': 296.90054184746526, 'lastRequest': 5, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276768505, 'lastChunkStartTime': 1656276766706, 'lastChunkSize': 126289}
+INFO:__main__:{'nextChunkSize': [2290172, 1638769, 1060487, 709534, 437162, 173849], 'lastquality': 0, 'buffer': 9.042917999999997, 'bufferAdjusted': 4.492917999999996, 'bandwidthEst': 344.46713660723753, 'lastRequest': 6, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276770595, 'lastChunkStartTime': 1656276768791, 'lastChunkSize': 153295}
+INFO:__main__:{'nextChunkSize': [2055469, 1348011, 852833, 584846, 374758, 150710], 'lastquality': 0, 'buffer': 11.292164999999997, 'bufferAdjusted': 6.742164999999996, 'bandwidthEst': 450.36714550688447, 'lastRequest': 7, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276772343, 'lastChunkStartTime': 1656276770715, 'lastChunkSize': 173849}
+INFO:__main__:{'nextChunkSize': [2169201, 1429765, 913888, 560821, 362795, 139105], 'lastquality': 0, 'buffer': 14.092323999999998, 'bufferAdjusted': 9.542323999999997, 'bandwidthEst': 633.4077672538617, 'lastRequest': 8, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276773546, 'lastChunkStartTime': 1656276772459, 'lastChunkSize': 150710}
+INFO:__main__:{'nextChunkSize': [2173522, 1354548, 939819, 607410, 353220, 141840], 'lastquality': 1, 'buffer': 15.909831999999998, 'bufferAdjusted': 11.359831999999997, 'bandwidthEst': 822.4807134433394, 'lastRequest': 9, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276775726, 'lastChunkStartTime': 1656276773779, 'lastChunkSize': 362795}
+INFO:__main__:{'nextChunkSize': [2102452, 1519951, 917428, 594078, 405134, 156148], 'lastquality': 1, 'buffer': 17.822038, 'bufferAdjusted': 13.272038000000002, 'bandwidthEst': 1030.2877379048484, 'lastRequest': 10, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276777814, 'lastChunkStartTime': 1656276775922, 'lastChunkSize': 353220}
+INFO:__main__:{'nextChunkSize': [2209463, 1422919, 946851, 624282, 386351, 160746], 'lastquality': 1, 'buffer': 19.901725, 'bufferAdjusted': 15.351725000000002, 'bandwidthEst': 1299.0952086822929, 'lastRequest': 11, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276779735, 'lastChunkStartTime': 1656276778023, 'lastChunkSize': 405134}
+INFO:__main__:{'nextChunkSize': [2275376, 1578343, 1036454, 687371, 434409, 179801], 'lastquality': 1, 'buffer': 22.038037, 'bufferAdjusted': 17.488037000000002, 'bandwidthEst': 1557.2038215410757, 'lastRequest': 12, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276781598, 'lastChunkStartTime': 1656276779986, 'lastChunkSize': 386351}
+INFO:__main__:{'nextChunkSize': [2005399, 1231445, 821631, 526950, 337059, 140051], 'lastquality': 3, 'buffer': 13.846396999999996, 'bufferAdjusted': 9.296396999999995, 'bandwidthEst': 909.0548964369463, 'lastRequest': 13, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276793779, 'lastChunkStartTime': 1656276782124, 'lastChunkSize': 1036454}
+INFO:__main__:{'nextChunkSize': [2152483, 1471065, 923170, 587876, 366214, 138313], 'lastquality': 1, 'buffer': 6.254536999999999, 'bufferAdjusted': 1.7045369999999984, 'bandwidthEst': 459.01356076259543, 'lastRequest': 14, 'RebufferTime': 14801, 'lastChunkFinishTime': 1656276805377, 'lastChunkStartTime': 1656276794994, 'lastChunkSize': 337059}
+INFO:__main__:{'nextChunkSize': [2289689, 1491626, 966699, 617242, 360831, 143509], 'lastquality': 0, 'buffer': 4.471821999999996, 'bufferAdjusted': -0.0781780000000043, 'bandwidthEst': 355.2939158957096, 'lastRequest': 15, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276812699, 'lastChunkStartTime': 1656276807005, 'lastChunkSize': 138313}
+INFO:__main__:{'nextChunkSize': [2059512, 1358801, 885714, 581493, 372963, 150616], 'lastquality': 0, 'buffer': 4.682924, 'bufferAdjusted': 0.13292399999999915, 'bandwidthEst': 346.25035696710785, 'lastRequest': 16, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276816484, 'lastChunkStartTime': 1656276813971, 'lastChunkSize': 143509}
+INFO:__main__:{'nextChunkSize': [2220726, 1537156, 987708, 639204, 405596, 165384], 'lastquality': 0, 'buffer': 5.317123999999993, 'bufferAdjusted': 0.7671239999999919, 'bandwidthEst': 341.2980339017261, 'lastRequest': 17, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276819850, 'lastChunkStartTime': 1656276817869, 'lastChunkSize': 150616}
+INFO:__main__:{'nextChunkSize': [2156729, 1336050, 923755, 586839, 350713, 140881], 'lastquality': 0, 'buffer': 7.197258000000005, 'bufferAdjusted': 2.6472580000000043, 'bandwidthEst': 278.04452849232746, 'lastRequest': 18, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276821974, 'lastChunkStartTime': 1656276820139, 'lastChunkSize': 165384}
+INFO:__main__:{'nextChunkSize': [2039773, 1415116, 891604, 601738, 386472, 157671], 'lastquality': 0, 'buffer': 9.567404999999994, 'bufferAdjusted': 5.017404999999993, 'bandwidthEst': 313.7689902756363, 'lastRequest': 19, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276823604, 'lastChunkStartTime': 1656276822614, 'lastChunkSize': 140881}
+INFO:__main__:{'nextChunkSize': [2176469, 1468126, 955231, 616206, 399894, 157812], 'lastquality': 0, 'buffer': 11.704779000000002, 'bufferAdjusted': 7.154779000000001, 'bandwidthEst': 636.2750741546907, 'lastRequest': 20, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276825466, 'lastChunkStartTime': 1656276824103, 'lastChunkSize': 157671}
+INFO:__main__:{'nextChunkSize': [2221506, 1505760, 968026, 656471, 401853, 163927], 'lastquality': 0, 'buffer': 14.094246999999996, 'bufferAdjusted': 9.544246999999995, 'bandwidthEst': 801.3202524856307, 'lastRequest': 21, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276827077, 'lastChunkStartTime': 1656276826049, 'lastChunkSize': 157812}
+INFO:__main__:{'nextChunkSize': [2044075, 1323990, 874175, 536667, 343800, 137654], 'lastquality': 1, 'buffer': 10.950476999999992, 'bufferAdjusted': 6.4004769999999915, 'bandwidthEst': 601.086752617965, 'lastRequest': 22, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276834213, 'lastChunkStartTime': 1656276827459, 'lastChunkSize': 401853}
+INFO:__main__:{'nextChunkSize': [2186790, 1383735, 897976, 587236, 359903, 146754], 'lastquality': 1, 'buffer': 8.644144999999995, 'bufferAdjusted': 4.094144999999994, 'bandwidthEst': 600.5792695345986, 'lastRequest': 23, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276840521, 'lastChunkStartTime': 1656276836260, 'lastChunkSize': 343800}
+INFO:__main__:{'nextChunkSize': [2105231, 1480464, 905935, 590335, 379700, 153938], 'lastquality': 0, 'buffer': 8.557025999999993, 'bufferAdjusted': 4.007025999999993, 'bandwidthEst': 520.3778673490688, 'lastRequest': 24, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276844610, 'lastChunkStartTime': 1656276841385, 'lastChunkSize': 146754}
+INFO:__main__:{'nextChunkSize': [2395588, 1547572, 1076599, 696376, 425781, 181901], 'lastquality': 0, 'buffer': 10.556504000000004, 'bufferAdjusted': 6.006504000000003, 'bandwidthEst': 519.7132433324089, 'lastRequest': 25, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276846615, 'lastChunkStartTime': 1656276845235, 'lastChunkSize': 153938}
+INFO:__main__:{'nextChunkSize': [1972048, 1141971, 758197, 487160, 277716, 111155], 'lastquality': 0, 'buffer': 12.933076999999997, 'bufferAdjusted': 8.383076999999997, 'bandwidthEst': 522.1663055492103, 'lastRequest': 26, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276848238, 'lastChunkStartTime': 1656276847120, 'lastChunkSize': 181901}
+INFO:__main__:{'nextChunkSize': [2134614, 1498470, 972798, 622896, 400396, 153605], 'lastquality': 1, 'buffer': 14.904719, 'bufferAdjusted': 10.354719, 'bandwidthEst': 609.7691487438685, 'lastRequest': 27, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276850265, 'lastChunkStartTime': 1656276848381, 'lastChunkSize': 277716}
+INFO:__main__:{'nextChunkSize': [2164140, 1561263, 975811, 641447, 400508, 149029], 'lastquality': 1, 'buffer': 15.448744000000005, 'bufferAdjusted': 10.898744000000004, 'bandwidthEst': 676.7283748379103, 'lastRequest': 28, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276853720, 'lastChunkStartTime': 1656276850714, 'lastChunkSize': 400396}
+INFO:__main__:{'nextChunkSize': [2113193, 1341201, 873429, 570392, 358218, 157421], 'lastquality': 1, 'buffer': 16.041236999999995, 'bufferAdjusted': 11.491236999999995, 'bandwidthEst': 1100.1228164191255, 'lastRequest': 29, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276857128, 'lastChunkStartTime': 1656276854340, 'lastChunkSize': 400508}
+INFO:__main__:{'nextChunkSize': [2147852, 1497683, 954453, 620283, 400322, 157488], 'lastquality': 1, 'buffer': 17.179132999999993, 'bufferAdjusted': 12.629132999999996, 'bandwidthEst': 1151.863642001461, 'lastRequest': 30, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276859990, 'lastChunkStartTime': 1656276857582, 'lastChunkSize': 358218}
+INFO:__main__:{'nextChunkSize': [2191074, 1358081, 885062, 584349, 369834, 143881], 'lastquality': 1, 'buffer': 18.429613000000018, 'bufferAdjusted': 13.87961300000002, 'bandwidthEst': 1184.4936053376982, 'lastRequest': 31, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276862735, 'lastChunkStartTime': 1656276860548, 'lastChunkSize': 400322}
+INFO:__main__:{'nextChunkSize': [2286761, 1587293, 1035329, 670129, 412837, 163444], 'lastquality': 1, 'buffer': 20.248044000000007, 'bufferAdjusted': 15.69804400000001, 'bandwidthEst': 1220.0316169193245, 'lastRequest': 32, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276864922, 'lastChunkStartTime': 1656276862852, 'lastChunkSize': 369834}
+INFO:__main__:{'nextChunkSize': [2307787, 1492672, 1026056, 690253, 401088, 179328], 'lastquality': 1, 'buffer': 21.37015200000002, 'bufferAdjusted': 16.82015200000002, 'bandwidthEst': 1310.9804151255778, 'lastRequest': 33, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276867799, 'lastChunkStartTime': 1656276865544, 'lastChunkSize': 412837}
+INFO:__main__:{'nextChunkSize': [2143948, 1439896, 943942, 598727, 365161, 159914], 'lastquality': 1, 'buffer': 22.075529000000017, 'bufferAdjusted': 17.52552900000002, 'bandwidthEst': 1338.1486167919882, 'lastRequest': 34, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276871088, 'lastChunkStartTime': 1656276868491, 'lastChunkSize': 401088}
+INFO:__main__:{'nextChunkSize': [1919781, 1139291, 728962, 487812, 321064, 131610], 'lastquality': 1, 'buffer': 21.86339000000001, 'bufferAdjusted': 17.313390000000012, 'bandwidthEst': 1290.6003452205025, 'lastRequest': 35, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276875302, 'lastChunkStartTime': 1656276872537, 'lastChunkSize': 365161}
+INFO:__main__:{'nextChunkSize': [2147467, 1499009, 938587, 575591, 361565, 124011], 'lastquality': 1, 'buffer': 20.46927500000001, 'bufferAdjusted': 15.919275000000013, 'bandwidthEst': 1046.8751147863613, 'lastRequest': 36, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276880696, 'lastChunkStartTime': 1656276877129, 'lastChunkSize': 321064}
+INFO:__main__:{'nextChunkSize': [2133870, 1427478, 908665, 605884, 378327, 144254], 'lastquality': 1, 'buffer': 10.888670000000019, 'bufferAdjusted': 6.338670000000018, 'bandwidthEst': 342.36967397095856, 'lastRequest': 37, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276894275, 'lastChunkStartTime': 1656276881112, 'lastChunkSize': 361565}
+INFO:__main__:{'nextChunkSize': [2146120, 1402287, 930577, 587506, 390680, 149991], 'lastquality': 0, 'buffer': 11.423290000000009, 'bufferAdjusted': 6.873290000000008, 'bandwidthEst': 325.1665450579879, 'lastRequest': 38, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276897748, 'lastChunkStartTime': 1656276894849, 'lastChunkSize': 144254}
+INFO:__main__:{'nextChunkSize': [2108491, 1339500, 858450, 566904, 345516, 147968], 'lastquality': 0, 'buffer': 13.098905000000002, 'bufferAdjusted': 8.548905000000001, 'bandwidthEst': 312.32049327701156, 'lastRequest': 39, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276900073, 'lastChunkStartTime': 1656276897985, 'lastChunkSize': 149991}
+INFO:__main__:{'nextChunkSize': [2184571, 1527299, 1025005, 641452, 384505, 161857], 'lastquality': 0, 'buffer': 15.247089000000017, 'bufferAdjusted': 10.697089000000016, 'bandwidthEst': 299.124290541657, 'lastRequest': 40, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276901924, 'lastChunkStartTime': 1656276900351, 'lastChunkSize': 147968}
+INFO:__main__:{'nextChunkSize': [2121928, 1343002, 886255, 599477, 372093, 145210], 'lastquality': 1, 'buffer': 14.374607000000026, 'bufferAdjusted': 9.824607000000025, 'bandwidthEst': 304.84314275969405, 'lastRequest': 41, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276906790, 'lastChunkStartTime': 1656276902199, 'lastChunkSize': 384505}
+INFO:__main__:{'nextChunkSize': [2219102, 1587250, 973972, 634861, 438281, 172312], 'lastquality': 1, 'buffer': 8.989490000000018, 'bufferAdjusted': 4.439490000000017, 'bandwidthEst': 434.30053281284364, 'lastRequest': 42, 'RebufferTime': 16334, 'lastChunkFinishTime': 1656276916176, 'lastChunkStartTime': 1656276907358, 'lastChunkSize': 372093}
+INFO:__main__:{'nextChunkSize': [2124950, 1464921, 958994, 630203, 398987, 167025], 'lastquality': 0, 'buffer': 4.423116000000022, 'bufferAdjusted': -0.12688399999997868, 'bandwidthEst': 114.07306037730588, 'lastRequest': 43, 'RebufferTime': 29028, 'lastChunkFinishTime': 1656276937436, 'lastChunkStartTime': 1656276917630, 'lastChunkSize': 172312}
+INFO:__main__:{'nextChunkSize': [2246506, 1483527, 982064, 638661, 393804, 160064], 'lastquality': 0, 'buffer': 4.355849000000006, 'bufferAdjusted': -0.19415099999999397, 'bandwidthEst': 117.71080086906589, 'lastRequest': 44, 'RebufferTime': 32941, 'lastChunkFinishTime': 1656276945421, 'lastChunkStartTime': 1656276939610, 'lastChunkSize': 167025}
+INFO:__main__:{'nextChunkSize': [1961140, 1231456, 830730, 538612, 331053, 137507], 'lastquality': 0, 'buffer': 7.1859870000000114, 'bufferAdjusted': 2.6359870000000107, 'bandwidthEst': 116.63824857301074, 'lastRequest': 45, 'RebufferTime': 32941, 'lastChunkFinishTime': 1656276946591, 'lastChunkStartTime': 1656276945529, 'lastChunkSize': 160064}
+INFO:__main__:{'nextChunkSize': [2155012, 1364537, 846370, 550906, 314107, 118421], 'lastquality': 0, 'buffer': 10.200965000000025, 'bufferAdjusted': 5.650965000000024, 'bandwidthEst': 107.76132890499728, 'lastRequest': 46, 'RebufferTime': 32941, 'lastChunkFinishTime': 1656276947577, 'lastChunkStartTime': 1656276946700, 'lastChunkSize': 137507}
+INFO:__main__:{'nextChunkSize': [1433658, 889412, 598850, 391450, 255954, 112270], 'lastquality': 0, 'buffer': 13.277681000000001, 'bufferAdjusted': 8.727681, 'bandwidthEst': 90.89719927269333, 'lastRequest': 47, 'RebufferTime': 32941, 'lastChunkFinishTime': 1656276948500, 'lastChunkStartTime': 1656276947685, 'lastChunkSize': 118421}
+INFO:__main__:{'nextChunkSize': 0, 'lastquality': 0, 'buffer': 13.995892999999995, 'bufferAdjusted': 9.445892999999995, 'bandwidthEst': 331.541642408941, 'lastRequest': 48, 'RebufferTime': 32941, 'lastChunkFinishTime': 1656276949462, 'lastChunkStartTime': 1656276948647, 'lastChunkSize': 112270}
+INFO:__main__:{'nextChunkSize': [2123065, 1431809, 957685, 611087, 398865, 155580], 'lastquality': 1, 'buffer': 4, 'bufferAdjusted': -0.5499999999999998, 'bandwidthEst': 632.322649319929, 'lastRequest': 0, 'RebufferTime': 8569, 'lastChunkFinishTime': 1656276958296, 'lastChunkStartTime': 1656276949841, 'lastChunkSize': 668286}
+INFO:__main__:{'nextChunkSize': [2177073, 1300868, 877771, 571051, 350812, 139857], 'lastquality': 0, 'buffer': 7.960393, 'bufferAdjusted': 3.410392999999999, 'bandwidthEst': 639.4171250190556, 'lastRequest': 1, 'RebufferTime': 8569, 'lastChunkFinishTime': 1656276958355, 'lastChunkStartTime': 1656276958350, 'lastChunkSize': 155580}
+INFO:__main__:{'nextChunkSize': [2160877, 1520281, 933276, 617681, 382355, 155432], 'lastquality': 5, 'buffer': 4.472949, 'bufferAdjusted': -0.07705100000000042, 'bandwidthEst': 741.7388319437273, 'lastRequest': 2, 'RebufferTime': 23342, 'lastChunkFinishTime': 1656276980590, 'lastChunkStartTime': 1656276958569, 'lastChunkSize': 2177073}
+INFO:__main__:{'nextChunkSize': [2233056, 1472558, 996749, 652874, 411561, 163442], 'lastquality': 3, 'buffer': 4.460487999999998, 'bufferAdjusted': -0.08951200000000226, 'bandwidthEst': 741.3518352628843, 'lastRequest': 3, 'RebufferTime': 30265, 'lastChunkFinishTime': 1656276991518, 'lastChunkStartTime': 1656276981431, 'lastChunkSize': 933276}
+INFO:__main__:{'nextChunkSize': [1941625, 1224260, 801058, 520315, 318564, 126289], 'lastquality': 1, 'buffer': 4.376212999999998, 'bufferAdjusted': -0.17378700000000213, 'bandwidthEst': 725.1608049159574, 'lastRequest': 4, 'RebufferTime': 32038, 'lastChunkFinishTime': 1656276997377, 'lastChunkStartTime': 1656276992076, 'lastChunkSize': 411561}
+INFO:__main__:{'nextChunkSize': [2157535, 1388403, 905515, 561791, 352642, 153295], 'lastquality': 0, 'buffer': 8.351541999999998, 'bufferAdjusted': 3.8015419999999978, 'bandwidthEst': 751.8323267686923, 'lastRequest': 5, 'RebufferTime': 32038, 'lastChunkFinishTime': 1656276997412, 'lastChunkStartTime': 1656276997407, 'lastChunkSize': 126289}
+INFO:__main__:{'nextChunkSize': [2290172, 1638769, 1060487, 709534, 437162, 173849], 'lastquality': 5, 'buffer': 4.392623999999998, 'bufferAdjusted': -0.1573760000000024, 'bandwidthEst': 772.1497835638954, 'lastRequest': 6, 'RebufferTime': 45646, 'lastChunkFinishTime': 1656277018959, 'lastChunkStartTime': 1656276997777, 'lastChunkSize': 2157535}
+INFO:__main__:{'nextChunkSize': [2055469, 1348011, 852833, 584846, 374758, 150710], 'lastquality': 3, 'buffer': 4.487936999999999, 'bufferAdjusted': -0.062063000000001534, 'bandwidthEst': 653.1394099387791, 'lastRequest': 7, 'RebufferTime': 59203, 'lastChunkFinishTime': 1656277036428, 'lastChunkStartTime': 1656277019452, 'lastChunkSize': 1060487}
+INFO:__main__:{'nextChunkSize': [2169201, 1429765, 913888, 560821, 362795, 139105], 'lastquality': 0, 'buffer': 8.466265, 'bufferAdjusted': 3.916264999999999, 'bandwidthEst': 637.2073904126017, 'lastRequest': 8, 'RebufferTime': 59203, 'lastChunkFinishTime': 1656277036462, 'lastChunkStartTime': 1656277036457, 'lastChunkSize': 150710}
+ERROR:__main__:Keyboard interrupted.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:225: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:62: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:165: calling TruncatedNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tflearn/initializations.py:110: calling UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py:507: UniformUnitScaling.__init__ (from tensorflow.python.ops.init_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.initializers.variance_scaling instead with distribution=uniform to get equivalent behavior.
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:29: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:35: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:48: The name tf.log is deprecated. Please use tf.math.log instead.
+
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:49: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /newhome/pensieve/rl_server/a3c.py:58: The name tf.train.RMSPropOptimizer is deprecated. Please use tf.compat.v1.train.RMSPropOptimizer instead.
+
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/training/rmsprop.py:119: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /users/acardoza/.local/lib/python3.6/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+WARNING:tensorflow:From ../rl_server/rl_server_no_training.py:235: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+INFO:tensorflow:Restoring parameters from ../rl_server/results/pretrain_linear_reward.ckpt
+INFO:__main__:Model restored.
+INFO:__main__:Listening on port 8333
+INFO:__main__:{'nextChunkSize': [2123065, 1431809, 957685, 611087, 398865, 155580], 'lastquality': 1, 'buffer': 4, 'bufferAdjusted': -0.5499999999999998, 'bandwidthEst': 1014.1509009009009, 'lastRequest': 0, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277071103, 'lastChunkStartTime': 1656277067551, 'lastChunkSize': 450283}
+INFO:__main__:{'nextChunkSize': [2177073, 1300868, 877771, 571051, 350812, 139857], 'lastquality': 0, 'buffer': 6.331146, 'bufferAdjusted': 1.7811459999999997, 'bandwidthEst': 1033.1524882756435, 'lastRequest': 1, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277072784, 'lastChunkStartTime': 1656277071650, 'lastChunkSize': 155580}
+INFO:__main__:{'nextChunkSize': [2160877, 1520281, 933276, 617681, 382355, 155432], 'lastquality': 0, 'buffer': 9.18878, 'bufferAdjusted': 4.638779999999999, 'bandwidthEst': 1043.1717721990456, 'lastRequest': 2, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277073926, 'lastChunkStartTime': 1656277072901, 'lastChunkSize': 139857}
+INFO:__main__:{'nextChunkSize': [2233056, 1472558, 996749, 652874, 411561, 163442], 'lastquality': 0, 'buffer': 11.929215, 'bufferAdjusted': 7.3792149999999985, 'bandwidthEst': 1048.3567761808313, 'lastRequest': 3, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277075186, 'lastChunkStartTime': 1656277074029, 'lastChunkSize': 155432}
+INFO:__main__:{'nextChunkSize': [1941625, 1224260, 801058, 520315, 318564, 126289], 'lastquality': 1, 'buffer': 12.798483999999998, 'bufferAdjusted': 8.248483999999998, 'bandwidthEst': 1061.712094379059, 'lastRequest': 4, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277078314, 'lastChunkStartTime': 1656277075303, 'lastChunkSize': 411561}
+INFO:__main__:{'nextChunkSize': [2157535, 1388403, 905515, 561791, 352642, 153295], 'lastquality': 1, 'buffer': 14.118339999999998, 'bufferAdjusted': 9.568339999999997, 'bandwidthEst': 1060.7345817575144, 'lastRequest': 5, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277080994, 'lastChunkStartTime': 1656277078430, 'lastChunkSize': 318564}
+INFO:__main__:{'nextChunkSize': [2290172, 1638769, 1060487, 709534, 437162, 173849], 'lastquality': 1, 'buffer': 14.719460999999999, 'bufferAdjusted': 10.169460999999998, 'bandwidthEst': 988.1986558748162, 'lastRequest': 6, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277084389, 'lastChunkStartTime': 1656277081104, 'lastChunkSize': 352642}
+INFO:__main__:{'nextChunkSize': [2055469, 1348011, 852833, 584846, 374758, 150710], 'lastquality': 1, 'buffer': 13.905092999999997, 'bufferAdjusted': 9.355092999999997, 'bandwidthEst': 889.9381685488173, 'lastRequest': 7, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277089203, 'lastChunkStartTime': 1656277084512, 'lastChunkSize': 437162}
+INFO:__main__:{'nextChunkSize': [2169201, 1429765, 913888, 560821, 362795, 139105], 'lastquality': 1, 'buffer': 13.669511999999997, 'bufferAdjusted': 9.119511999999997, 'bandwidthEst': 844.9193029083001, 'lastRequest': 8, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277093438, 'lastChunkStartTime': 1656277089448, 'lastChunkSize': 374758}
+INFO:__main__:{'nextChunkSize': [2173522, 1354548, 939819, 607410, 353220, 141840], 'lastquality': 1, 'buffer': 11.113492999999998, 'bufferAdjusted': 6.563492999999998, 'bandwidthEst': 688.7090526802689, 'lastRequest': 9, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277099996, 'lastChunkStartTime': 1656277094227, 'lastChunkSize': 362795}
+INFO:__main__:{'nextChunkSize': [2102452, 1519951, 917428, 594078, 405134, 156148], 'lastquality': 0, 'buffer': 7.290424000000002, 'bufferAdjusted': 2.740424000000001, 'bandwidthEst': 406.8583268378087, 'lastRequest': 10, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277107819, 'lastChunkStartTime': 1656277101854, 'lastChunkSize': 141840}
+INFO:__main__:{'nextChunkSize': [2209463, 1422919, 946851, 624282, 386351, 160746], 'lastquality': 0, 'buffer': 7.811335999999997, 'bufferAdjusted': 3.2613359999999965, 'bandwidthEst': 387.13797123284513, 'lastRequest': 11, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277111299, 'lastChunkStartTime': 1656277108987, 'lastChunkSize': 156148}
+INFO:__main__:{'nextChunkSize': [2275376, 1578343, 1036454, 687371, 434409, 179801], 'lastquality': 0, 'buffer': 9.526897999999996, 'bufferAdjusted': 4.976897999999995, 'bandwidthEst': 360.55205834842445, 'lastRequest': 12, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277113588, 'lastChunkStartTime': 1656277112132, 'lastChunkSize': 160746}
+INFO:__main__:{'nextChunkSize': [2005399, 1231445, 821631, 526950, 337059, 140051], 'lastquality': 0, 'buffer': 12.174903999999998, 'bufferAdjusted': 7.624903999999997, 'bandwidthEst': 336.0218833803481, 'lastRequest': 13, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277114940, 'lastChunkStartTime': 1656277113703, 'lastChunkSize': 179801}
+INFO:__main__:{'nextChunkSize': [2152483, 1471065, 923170, 587876, 366214, 138313], 'lastquality': 1, 'buffer': 11.902918999999997, 'bufferAdjusted': 7.352918999999996, 'bandwidthEst': 337.3911975738681, 'lastRequest': 14, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277119207, 'lastChunkStartTime': 1656277115698, 'lastChunkSize': 337059}
+INFO:__main__:{'nextChunkSize': [2289689, 1491626, 966699, 617242, 360831, 143509], 'lastquality': 1, 'buffer': 8.361554999999996, 'bufferAdjusted': 3.811554999999995, 'bandwidthEst': 572.7107962844979, 'lastRequest': 15, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277126747, 'lastChunkStartTime': 1656277120160, 'lastChunkSize': 366214}
+INFO:__main__:{'nextChunkSize': [2059512, 1358801, 885714, 581493, 372963, 150616], 'lastquality': 0, 'buffer': 7.488295999999998, 'bufferAdjusted': 2.9382959999999976, 'bandwidthEst': 432.1685436133517, 'lastRequest': 16, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277131622, 'lastChunkStartTime': 1656277127072, 'lastChunkSize': 143509}
+INFO:__main__:{'nextChunkSize': [2220726, 1537156, 987708, 639204, 405596, 165384], 'lastquality': 0, 'buffer': 7.590660999999997, 'bufferAdjusted': 3.0406609999999965, 'bandwidthEst': 405.5547559096827, 'lastRequest': 17, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277135519, 'lastChunkStartTime': 1656277132290, 'lastChunkSize': 150616}
+INFO:__main__:{'nextChunkSize': [2156729, 1336050, 923755, 586839, 350713, 140881], 'lastquality': 0, 'buffer': 7.042864999999992, 'bufferAdjusted': 2.4928649999999912, 'bandwidthEst': 389.59597192377845, 'lastRequest': 18, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277140068, 'lastChunkStartTime': 1656277136744, 'lastChunkSize': 165384}
+INFO:__main__:{'nextChunkSize': [2039773, 1415116, 891604, 601738, 386472, 157671], 'lastquality': 0, 'buffer': 9.361441999999997, 'bufferAdjusted': 4.811441999999996, 'bandwidthEst': 370.1353003996504, 'lastRequest': 19, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277141754, 'lastChunkStartTime': 1656277140295, 'lastChunkSize': 140881}
+INFO:__main__:{'nextChunkSize': [2176469, 1468126, 955231, 616206, 399894, 157812], 'lastquality': 0, 'buffer': 10.463791, 'bufferAdjusted': 5.913791, 'bandwidthEst': 363.64918640294803, 'lastRequest': 20, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277144651, 'lastChunkStartTime': 1656277142984, 'lastChunkSize': 157671}
+INFO:__main__:{'nextChunkSize': [2221506, 1505760, 968026, 656471, 401853, 163927], 'lastquality': 0, 'buffer': 11.011797999999999, 'bufferAdjusted': 6.461797999999998, 'bandwidthEst': 487.21837544658206, 'lastRequest': 21, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277148099, 'lastChunkStartTime': 1656277146449, 'lastChunkSize': 157812}
+INFO:__main__:{'nextChunkSize': [2044075, 1323990, 874175, 536667, 343800, 137654], 'lastquality': 0, 'buffer': 11.671165000000002, 'bufferAdjusted': 7.121165000000001, 'bandwidthEst': 578.4046741343705, 'lastRequest': 22, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277151440, 'lastChunkStartTime': 1656277149596, 'lastChunkSize': 163927}
+INFO:__main__:{'nextChunkSize': [2186790, 1383735, 897976, 587236, 359903, 146754], 'lastquality': 0, 'buffer': 12.592099000000005, 'bufferAdjusted': 8.042099000000004, 'bandwidthEst': 709.0772721852193, 'lastRequest': 23, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277154523, 'lastChunkStartTime': 1656277152675, 'lastChunkSize': 137654}
+INFO:__main__:{'nextChunkSize': [2105231, 1480464, 905935, 590335, 379700, 153938], 'lastquality': 0, 'buffer': 13.128181999999995, 'bufferAdjusted': 8.578181999999995, 'bandwidthEst': 664.388671667143, 'lastRequest': 24, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277157983, 'lastChunkStartTime': 1656277155932, 'lastChunkSize': 146754}
+INFO:__main__:{'nextChunkSize': [2395588, 1547572, 1076599, 696376, 425781, 181901], 'lastquality': 0, 'buffer': 11.765417999999997, 'bufferAdjusted': 7.215417999999996, 'bandwidthEst': 593.3243758413197, 'lastRequest': 25, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277163345, 'lastChunkStartTime': 1656277160777, 'lastChunkSize': 153938}
+INFO:__main__:{'nextChunkSize': [1972048, 1141971, 758197, 487160, 277716, 111155], 'lastquality': 0, 'buffer': 5.581236000000004, 'bufferAdjusted': 1.0312360000000034, 'bandwidthEst': 397.5378286657314, 'lastRequest': 26, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277173528, 'lastChunkStartTime': 1656277168165, 'lastChunkSize': 181901}
+INFO:__main__:{'nextChunkSize': [2134614, 1498470, 972798, 622896, 400396, 153605], 'lastquality': 0, 'buffer': 6.282329000000004, 'bufferAdjusted': 1.7323290000000036, 'bandwidthEst': 371.19330019479514, 'lastRequest': 27, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277176833, 'lastChunkStartTime': 1656277174413, 'lastChunkSize': 111155}
+INFO:__main__:{'nextChunkSize': [2164140, 1561263, 975811, 641447, 400508, 149029], 'lastquality': 0, 'buffer': 6.146198999999996, 'bufferAdjusted': 1.596198999999995, 'bandwidthEst': 361.3892228328607, 'lastRequest': 28, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277180964, 'lastChunkStartTime': 1656277177961, 'lastChunkSize': 153605}
+INFO:__main__:{'nextChunkSize': [2113193, 1341201, 873429, 570392, 358218, 157421], 'lastquality': 0, 'buffer': 7.123255, 'bufferAdjusted': 2.5732549999999996, 'bandwidthEst': 359.6970815308885, 'lastRequest': 29, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277183988, 'lastChunkStartTime': 1656277181653, 'lastChunkSize': 149029}
+INFO:__main__:{'nextChunkSize': [2147852, 1497683, 954453, 620283, 400322, 157488], 'lastquality': 0, 'buffer': 8.148099000000002, 'bufferAdjusted': 3.5980990000000013, 'bandwidthEst': 360.6225381197396, 'lastRequest': 30, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277186967, 'lastChunkStartTime': 1656277184394, 'lastChunkSize': 157421}
+INFO:__main__:{'nextChunkSize': [2191074, 1358081, 885062, 584349, 369834, 143881], 'lastquality': 0, 'buffer': 6.224860000000007, 'bufferAdjusted': 1.674860000000006, 'bandwidthEst': 438.8187170449191, 'lastRequest': 31, 'RebufferTime': 3663, 'lastChunkFinishTime': 1656277192886, 'lastChunkStartTime': 1656277190111, 'lastChunkSize': 157488}
+INFO:__main__:{'nextChunkSize': [2286761, 1587293, 1035329, 670129, 412837, 163444], 'lastquality': 0, 'buffer': 4.322190000000006, 'bufferAdjusted': -0.22780999999999407, 'bandwidthEst': 209.11048502257773, 'lastRequest': 32, 'RebufferTime': 15046, 'lastChunkFinishTime': 1656277210167, 'lastChunkStartTime': 1656277201122, 'lastChunkSize': 143881}
+INFO:__main__:{'nextChunkSize': [2307787, 1492672, 1026056, 690253, 401088, 179328], 'lastquality': 0, 'buffer': 4.445252000000011, 'bufferAdjusted': -0.10474799999998963, 'bandwidthEst': 194.06157569962284, 'lastRequest': 33, 'RebufferTime': 19674, 'lastChunkFinishTime': 1656277218672, 'lastChunkStartTime': 1656277212097, 'lastChunkSize': 163444}
+INFO:__main__:{'nextChunkSize': [2143948, 1439896, 943942, 598727, 365161, 159914], 'lastquality': 0, 'buffer': 4.316231000000016, 'bufferAdjusted': -0.23376899999998413, 'bandwidthEst': 165.5459030192515, 'lastRequest': 34, 'RebufferTime': 26897, 'lastChunkFinishTime': 1656277230021, 'lastChunkStartTime': 1656277219791, 'lastChunkSize': 179328}
+INFO:__main__:{'nextChunkSize': [1919781, 1139291, 728962, 487812, 321064, 131610], 'lastquality': 0, 'buffer': 4.280662000000007, 'bufferAdjusted': -0.26933799999999364, 'bandwidthEst': 166.37607504996714, 'lastRequest': 35, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277235603, 'lastChunkStartTime': 1656277231038, 'lastChunkSize': 159914}
+INFO:__main__:{'nextChunkSize': [2147467, 1499009, 938587, 575591, 361565, 124011], 'lastquality': 0, 'buffer': 5.062164000000024, 'bufferAdjusted': 0.5121640000000234, 'bandwidthEst': 165.33558553817508, 'lastRequest': 36, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277238823, 'lastChunkStartTime': 1656277236112, 'lastChunkSize': 131610}
+INFO:__main__:{'nextChunkSize': [2133870, 1427478, 908665, 605884, 378327, 144254], 'lastquality': 0, 'buffer': 6.195401000000004, 'bufferAdjusted': 1.6454010000000032, 'bandwidthEst': 195.93339586675194, 'lastRequest': 37, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277241694, 'lastChunkStartTime': 1656277239452, 'lastChunkSize': 124011}
+INFO:__main__:{'nextChunkSize': [2146120, 1402287, 930577, 587506, 390680, 149991], 'lastquality': 0, 'buffer': 8.215787000000006, 'bufferAdjusted': 3.6657870000000052, 'bandwidthEst': 206.35364765269662, 'lastRequest': 38, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277243674, 'lastChunkStartTime': 1656277242050, 'lastChunkSize': 144254}
+INFO:__main__:{'nextChunkSize': [2108491, 1339500, 858450, 566904, 345516, 147968], 'lastquality': 0, 'buffer': 10.092764000000017, 'bufferAdjusted': 5.542764000000016, 'bandwidthEst': 387.3103654366287, 'lastRequest': 39, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277245797, 'lastChunkStartTime': 1656277243830, 'lastChunkSize': 149991}
+INFO:__main__:{'nextChunkSize': [2184571, 1527299, 1025005, 641452, 384505, 161857], 'lastquality': 0, 'buffer': 11.738562000000002, 'bufferAdjusted': 7.188562000000001, 'bandwidthEst': 509.7364208528153, 'lastRequest': 40, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277248151, 'lastChunkStartTime': 1656277246352, 'lastChunkSize': 147968}
+INFO:__main__:{'nextChunkSize': [2121928, 1343002, 886255, 599477, 372093, 145210], 'lastquality': 0, 'buffer': 13.119520000000023, 'bufferAdjusted': 8.569520000000022, 'bandwidthEst': 580.3615734716029, 'lastRequest': 41, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277250766, 'lastChunkStartTime': 1656277248632, 'lastChunkSize': 161857}
+INFO:__main__:{'nextChunkSize': [2219102, 1587250, 973972, 634861, 438281, 172312], 'lastquality': 0, 'buffer': 14.541544000000016, 'bufferAdjusted': 9.991544000000015, 'bandwidthEst': 621.7815009367296, 'lastRequest': 42, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277253348, 'lastChunkStartTime': 1656277251288, 'lastChunkSize': 145210}
+INFO:__main__:{'nextChunkSize': [2124950, 1464921, 958994, 630203, 398987, 167025], 'lastquality': 1, 'buffer': 9.248917000000006, 'bufferAdjusted': 4.698917000000005, 'bandwidthEst': 479.4620521041735, 'lastRequest': 43, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277262633, 'lastChunkStartTime': 1656277253922, 'lastChunkSize': 438281}
+INFO:__main__:{'nextChunkSize': [2246506, 1483527, 982064, 638661, 393804, 160064], 'lastquality': 0, 'buffer': 8.305518000000006, 'bufferAdjusted': 3.7555180000000057, 'bandwidthEst': 414.46458444836986, 'lastRequest': 44, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277267580, 'lastChunkStartTime': 1656277263166, 'lastChunkSize': 167025}
+INFO:__main__:{'nextChunkSize': [1961140, 1231456, 830730, 538612, 331053, 137507], 'lastquality': 0, 'buffer': 6.107510000000019, 'bufferAdjusted': 1.5575100000000184, 'bandwidthEst': 336.8473749984007, 'lastRequest': 45, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277273776, 'lastChunkStartTime': 1656277268149, 'lastChunkSize': 160064}
+INFO:__main__:{'nextChunkSize': [2155012, 1364537, 846370, 550906, 314107, 118421], 'lastquality': 0, 'buffer': 4.747609000000011, 'bufferAdjusted': 0.19760900000001058, 'bandwidthEst': 305.99785381795107, 'lastRequest': 46, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277279138, 'lastChunkStartTime': 1656277274698, 'lastChunkSize': 137507}
+INFO:__main__:{'nextChunkSize': [1433658, 889412, 598850, 391450, 255954, 112270], 'lastquality': 0, 'buffer': 5.267037000000016, 'bufferAdjusted': 0.7170370000000155, 'bandwidthEst': 297.1832891790221, 'lastRequest': 47, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277282622, 'lastChunkStartTime': 1656277279704, 'lastChunkSize': 118421}
+INFO:__main__:{'nextChunkSize': 0, 'lastquality': 0, 'buffer': 3.871077999999983, 'bufferAdjusted': -0.6789220000000169, 'bandwidthEst': 272.71456911421666, 'lastRequest': 48, 'RebufferTime': 28439, 'lastChunkFinishTime': 1656277285694, 'lastChunkStartTime': 1656277283312, 'lastChunkSize': 112270}
+INFO:__main__:{'nextChunkSize': [2123065, 1431809, 957685, 611087, 398865, 155580], 'lastquality': 1, 'buffer': 4, 'bufferAdjusted': -0.5499999999999998, 'bandwidthEst': 290.0861638632664, 'lastRequest': 0, 'RebufferTime': 18545, 'lastChunkFinishTime': 1656277304608, 'lastChunkStartTime': 1656277286178, 'lastChunkSize': 668286}
+INFO:__main__:{'nextChunkSize': [2177073, 1300868, 877771, 571051, 350812, 139857], 'lastquality': 0, 'buffer': 7.962092, 'bufferAdjusted': 3.4120919999999995, 'bandwidthEst': 291.6232737329322, 'lastRequest': 1, 'RebufferTime': 18545, 'lastChunkFinishTime': 1656277304667, 'lastChunkStartTime': 1656277304661, 'lastChunkSize': 155580}
+INFO:__main__:{'nextChunkSize': [2160877, 1520281, 933276, 617681, 382355, 155432], 'lastquality': 5, 'buffer': 4.470136, 'bufferAdjusted': -0.07986400000000016, 'bandwidthEst': 418.13416962262943, 'lastRequest': 2, 'RebufferTime': 42330, 'lastChunkFinishTime': 1656277335915, 'lastChunkStartTime': 1656277305143, 'lastChunkSize': 2177073}
+INFO:__main__:{'nextChunkSize': [2233056, 1472558, 996749, 652874, 411561, 163442], 'lastquality': 3, 'buffer': 4.464036999999998, 'bufferAdjusted': -0.08596300000000268, 'bandwidthEst': 452.8988794380325, 'lastRequest': 3, 'RebufferTime': 46626, 'lastChunkFinishTime': 1656277344214, 'lastChunkStartTime': 1656277336577, 'lastChunkSize': 933276}
+INFO:__main__:{'nextChunkSize': [1941625, 1224260, 801058, 520315, 318564, 126289], 'lastquality': 3, 'buffer': 4.254329999999998, 'bufferAdjusted': -0.29567000000000254, 'bandwidthEst': 483.8214074995567, 'lastRequest': 4, 'RebufferTime': 52762, 'lastChunkFinishTime': 1656277354558, 'lastChunkStartTime': 1656277344359, 'lastChunkSize': 996749}
+INFO:__main__:{'nextChunkSize': [2157535, 1388403, 905515, 561791, 352642, 153295], 'lastquality': 0, 'buffer': 5.679091, 'bufferAdjusted': 1.129090999999999, 'bandwidthEst': 636.0940557520997, 'lastRequest': 5, 'RebufferTime': 52762, 'lastChunkFinishTime': 1656277357154, 'lastChunkStartTime': 1656277354951, 'lastChunkSize': 126289}
+INFO:__main__:{'nextChunkSize': [2290172, 1638769, 1060487, 709534, 437162, 173849], 'lastquality': 0, 'buffer': 5.977628999999997, 'bufferAdjusted': 1.427628999999996, 'bandwidthEst': 608.253274187879, 'lastRequest': 6, 'RebufferTime': 52762, 'lastChunkFinishTime': 1656277360852, 'lastChunkStartTime': 1656277357538, 'lastChunkSize': 153295}
+INFO:__main__:{'nextChunkSize': [2055469, 1348011, 852833, 584846, 374758, 150710], 'lastquality': 0, 'buffer': 6.382828999999997, 'bufferAdjusted': 1.8328289999999967, 'bandwidthEst': 650.0002610272467, 'lastRequest': 7, 'RebufferTime': 52762, 'lastChunkFinishTime': 1656277364447, 'lastChunkStartTime': 1656277361654, 'lastChunkSize': 173849}
+INFO:__main__:{'nextChunkSize': [2169201, 1429765, 913888, 560821, 362795, 139105], 'lastquality': 0, 'buffer': 8.717651, 'bufferAdjusted': 4.167650999999999, 'bandwidthEst': 584.8535200153287, 'lastRequest': 8, 'RebufferTime': 52762, 'lastChunkFinishTime': 1656277366116, 'lastChunkStartTime': 1656277364712, 'lastChunkSize': 150710}
+INFO:__main__:{'nextChunkSize': [2173522, 1354548, 939819, 607410, 353220, 141840], 'lastquality': 1, 'buffer': 12.684778999999999, 'bufferAdjusted': 8.134778999999998, 'bandwidthEst': 467.19032647166, 'lastRequest': 9, 'RebufferTime': 52762, 'lastChunkFinishTime': 1656277366148, 'lastChunkStartTime': 1656277366146, 'lastChunkSize': 362795}
+INFO:__main__:{'nextChunkSize': [2102452, 1519951, 917428, 594078, 405134, 156148], 'lastquality': 5, 'buffer': 4.377683999999995, 'bufferAdjusted': -0.17231600000000524, 'bandwidthEst': 727.1883375165827, 'lastRequest': 10, 'RebufferTime': 59295, 'lastChunkFinishTime': 1656277384971, 'lastChunkStartTime': 1656277366443, 'lastChunkSize': 2173522}
+ERROR:__main__:Keyboard interrupted.

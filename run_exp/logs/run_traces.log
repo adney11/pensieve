@@ -1,0 +1,35 @@
+-------- [ 26-06-2022 15:30 ] --------
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 0
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 0
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+-------- [ 26-06-2022 15:33 ] --------
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 0
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 0
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+-------- [ 26-06-2022 15:38 ] --------
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 3
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 3
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+-------- [ 26-06-2022 15:50 ] --------
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 8
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 4
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+-------- [ 26-06-2022 15:51 ] --------
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 car.aarnes-elverum-report.2011-02-10_1611CET.log_1800 6
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
+DEBUG:__main__:running command: mm-delay 40 mm-link 12mbps ./mahimahi_test_traces/tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 /usr/bin/python3.6 run_video.py 128.105.144.67 RL 320 7 tram.jernbanetorget-ljabru-report.2010-11-23_1515CET.log_180 4
+DEBUG:__main__:type(out) = <class 'bytes'> out.decode = done
+
