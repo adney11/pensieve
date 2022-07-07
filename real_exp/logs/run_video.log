@@ -1,0 +1,63 @@
+DEBUG:pyvirtualdisplay.abstractdisplay:command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x600x24', '-displayfd', '7']
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=:0
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=localhost:10.0
+DEBUG:pyvirtualdisplay.abstractdisplay:stdout=b''
+DEBUG:pyvirtualdisplay.abstractdisplay:stderr=b''
+------------
+DEBUG:pyvirtualdisplay.abstractdisplay:command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x600x24', '-displayfd', '7']
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=:0
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=localhost:10.0
+DEBUG:pyvirtualdisplay.abstractdisplay:stdout=b''
+DEBUG:pyvirtualdisplay.abstractdisplay:stderr=b''
+DEBUG:pyvirtualdisplay.abstractdisplay:command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x600x24', '-displayfd', '7']
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=:0
+DEBUG:__main__:attempting to start chrome driver
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=localhost:10.0
+DEBUG:pyvirtualdisplay.abstractdisplay:stdout=b''
+DEBUG:pyvirtualdisplay.abstractdisplay:stderr=b''
+DEBUG:pyvirtualdisplay.abstractdisplay:command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x600x24', '-displayfd', '7']
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=:0
+DEBUG:__main__:attempting to start chrome driver
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:36451/session {"desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "javascriptEnabled": true, "chromeOptions": {"localState": {"browser.enabled_labs_experiments": ["block-insecure-private-network-requests@2"]}, "extensions": [], "args": ["--user-data-dir=/tmp/chrome_user_dir_real_exp_RL", "--ignore-certificate-errors", "--disable-web-security", "--autoplay-policy=no-user-gesture-required"]}}, "sessionId": null}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:chrome driver started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:36451/session/79f7c3f37f39fc285575b95ae557f6fa/timeouts {"ms": 10000.0, "type": "page load", "sessionId": "79f7c3f37f39fc285575b95ae557f6fa"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:sending get request to http://128.105.144.243:80/myindex_RL.html
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:36451/session/79f7c3f37f39fc285575b95ae557f6fa/url {"url": "http://128.105.144.243:80/myindex_RL.html", "sessionId": "79f7c3f37f39fc285575b95ae557f6fa"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:got url and sleeping for 280 seconds
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:36451/session/79f7c3f37f39fc285575b95ae557f6fa {"sessionId": "79f7c3f37f39fc285575b95ae557f6fa"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=localhost:10.0
+DEBUG:pyvirtualdisplay.abstractdisplay:stdout=b''
+DEBUG:pyvirtualdisplay.abstractdisplay:stderr=b''
+DEBUG:__main__:finished watching video
+DEBUG:pyvirtualdisplay.abstractdisplay:command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x600x24', '-displayfd', '7']
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=:0
+DEBUG:__main__:attempting to start chrome driver
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60097/session {"desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "javascriptEnabled": true, "chromeOptions": {"localState": {"browser.enabled_labs_experiments": ["block-insecure-private-network-requests@2"]}, "extensions": [], "args": ["--user-data-dir=/tmp/chrome_user_dir_real_exp_RL", "--ignore-certificate-errors", "--disable-web-security", "--autoplay-policy=no-user-gesture-required"]}}, "sessionId": null}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:chrome driver started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60097/session/f896b0e9891ab1c7b49f4eea698424fb/timeouts {"ms": 10000.0, "type": "page load", "sessionId": "f896b0e9891ab1c7b49f4eea698424fb"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:sending get request to http://128.105.144.243:8080/myindex_RL.html
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:60097/session/f896b0e9891ab1c7b49f4eea698424fb/url {"url": "http://128.105.144.243:8080/myindex_RL.html", "sessionId": "f896b0e9891ab1c7b49f4eea698424fb"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=localhost:10.0
+DEBUG:pyvirtualdisplay.abstractdisplay:stdout=b''
+DEBUG:pyvirtualdisplay.abstractdisplay:stderr=b''
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://127.0.0.1:60097/session/f896b0e9891ab1c7b49f4eea698424fb {"sessionId": "f896b0e9891ab1c7b49f4eea698424fb"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:pyvirtualdisplay.abstractdisplay:command: ['Xvfb', '-br', '-nolisten', 'tcp', '-screen', '0', '800x600x24', '-displayfd', '7']
+DEBUG:pyvirtualdisplay.abstractdisplay:set $DISPLAY=:0
+DEBUG:__main__:attempting to start chrome driver
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53997/session {"desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "javascriptEnabled": true, "chromeOptions": {"localState": {"browser.enabled_labs_experiments": ["block-insecure-private-network-requests@2"]}, "extensions": [], "args": ["--user-data-dir=/tmp/chrome_user_dir_real_exp_RL", "--ignore-certificate-errors", "--disable-web-security", "--autoplay-policy=no-user-gesture-required"]}}, "sessionId": null}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:chrome driver started
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53997/session/c80711de5aa86164d81e3f25c596ea0c/timeouts {"ms": 10000.0, "type": "page load", "sessionId": "c80711de5aa86164d81e3f25c596ea0c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:sending get request to http://128.105.144.243:8080/myindex_RL.html
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://127.0.0.1:53997/session/c80711de5aa86164d81e3f25c596ea0c/url {"url": "http://128.105.144.243:8080/myindex_RL.html", "sessionId": "c80711de5aa86164d81e3f25c596ea0c"}
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:__main__:got url and sleeping for 280 seconds

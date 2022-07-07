@@ -10,6 +10,11 @@ from selenium.common.exceptions import TimeoutException
 from pyvirtualdisplay import Display
 from time import sleep
 
+
+import logging
+logging.basicConfig(filename='logs/run_video.log', level=logging.DEBUG)
+LOG = logging.getLogger(__name__)
+
 # TO RUN: download https://pypi.python.org/packages/source/s/selenium/selenium-2.39.0.tar.gz
 # run sudo apt-get install python-setuptools
 # run sudo apt-get install xvfb
@@ -34,7 +39,7 @@ exp_id = sys.argv[3]
 # ---------------------------------------------------
 #          |
 #          v
-url = 'localhost/' + 'myindex_' + abr_algo + '.html'
+url = 'http://128.105.144.243:8080/' + 'myindex_' + abr_algo + '.html'
 
 # timeout signal
 signal.signal(signal.SIGALRM, timeout_handler)
@@ -42,20 +47,21 @@ signal.alarm(run_time + 30)
 	
 try:
 	# copy over the chrome user dir
-	default_chrome_user_dir = '../abr_browser_dir/chrome_data_dir'
+	default_chrome_user_dir = '/newhome/pensieve/abr_browser_dir/chrome_data_dir'
 	chrome_user_dir = '/tmp/chrome_user_dir_real_exp_' + abr_algo
 	os.system('rm -r ' + chrome_user_dir)
 	os.system('cp -r ' + default_chrome_user_dir + ' ' + chrome_user_dir)
+	os.system('sudo chown -R acardoza ' + chrome_user_dir)
 	
 	# start abr algorithm server
 	if abr_algo == 'RL':
-		command = 'exec /usr/bin/python ../rl_server/rl_server_no_training.py ' + exp_id
+		command = 'exec /users/acardoza/venv/bin/python3 /newhome/pensieve/rl_server/rl_server_no_training.py ' + exp_id
 	elif abr_algo == 'fastMPC':
-		command = 'exec /usr/bin/python ../rl_server/mpc_server.py ' + exp_id
+		command = 'exec /users/acardoza/venv/bin/python3 ../rl_server/mpc_server.py ' + exp_id
 	elif abr_algo == 'robustMPC':
-		command = 'exec /usr/bin/python ../rl_server/robust_mpc_server.py ' + exp_id
+		command = 'exec /users/acardoza/venv/bin/python3 ../rl_server/robust_mpc_server.py ' + exp_id
 	else:
-		command = 'exec /usr/bin/python ../rl_server/simple_server.py ' + abr_algo + ' ' + exp_id
+		command = 'exec /users/acardoza/venv/bin/python3 ../rl_server/simple_server.py ' + abr_algo + ' ' + exp_id
 	
 	proc = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 	sleep(2)
@@ -65,21 +71,28 @@ try:
 	display.start()
 	
 	# initialize chrome driver
-	options=Options()
-	chrome_driver = '../abr_browser_dir/chromedriver'
+	options=webdriver.ChromeOptions()
+	chrome_driver = '/newhome/pensieve/abr_browser_dir/chromedriver'
 	options.add_argument('--user-data-dir=' + chrome_user_dir)
 	options.add_argument('--ignore-certificate-errors')
+	options.add_argument('--disable-web-security')
+	options.add_argument('--autoplay-policy=no-user-gesture-required')
+	experimentalFlags = ['block-insecure-private-network-requests@2']
+	chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
+	options.add_experimental_option('localState', chromeLocalStatePrefs)
+	LOG.debug("attempting to start chrome driver")
 	driver=webdriver.Chrome(chrome_driver, chrome_options=options)
-	
+	LOG.debug('chrome driver started')
 	# run chrome
 	driver.set_page_load_timeout(10)
+	LOG.debug(f"sending get request to {url}")
 	driver.get(url)
-	
+	LOG.debug(f'got url and sleeping for {run_time} seconds')
 	sleep(run_time)
 	
 	driver.quit()
 	display.stop()
-	
+	LOG.debug("finished watching video")
 	# kill abr algorithm server
 	proc.send_signal(signal.SIGINT)
 	# proc.kill()
@@ -100,5 +113,5 @@ except Exception as e:
 	except:
 		pass
 	
-	print e	
+	print(e)
 

@@ -7,25 +7,26 @@ import numpy as np
 RUN_SCRIPT = 'run_video.py'
 RANDOM_SEED = 42
 RUN_TIME = 280  # sec
-ABR_ALGO = ['fastMPC', 'robustMPC', 'BOLA', 'RL']
-REPEAT_TIME = 10
+#ABR_ALGO = ['fastMPC', 'robustMPC', 'BOLA', 'RL']
+ABR_ALGO = ['RL']
+REPEAT_TIME = 1
 
 
 def main():
 
 	np.random.seed(RANDOM_SEED)
 
-	with open('./chrome_retry_log', 'wb') as log:
+	with open('./chrome_retry_log', 'a') as log:
 		log.write('chrome retry log\n')
 		log.flush()
 
-		for rt in xrange(REPEAT_TIME):
+		for rt in range(REPEAT_TIME):
 			np.random.shuffle(ABR_ALGO)
 			for abr_algo in ABR_ALGO:
 
 				while True:
 
-					script = 'python ' + RUN_SCRIPT + ' ' + \
+					script = '/users/acardoza/venv/bin/python3 ' + RUN_SCRIPT + ' ' + \
 							  abr_algo + ' ' + str(RUN_TIME) + ' ' + str(rt)
 					
 					proc = subprocess.Popen(script,
@@ -35,7 +36,7 @@ def main():
 
 					(out, err) = proc.communicate()
 
-					if out == 'done\n':
+					if out.decode('utf-8') == 'done\n':
 						break
 					else:
 						log.write(abr_algo + '_' + str(rt) + '\n')
