@@ -63,7 +63,7 @@ try:
 	# start abr algorithm server
 	dp("start abr algorithm server...")
 	if abr_algo == 'RL':
-		command = 'exec /usr/bin/python3.6 ../rl_server/rl_server_no_training.py ' + trace_file
+		command = 'exec python ../rl_server/rl_server_no_training.py ' + trace_file
 	elif abr_algo == 'fastMPC':
 		command = 'exec /usr/bin/python3.6 ../rl_server/mpc_server.py ' + trace_file
 	elif abr_algo == 'robustMPC':
@@ -114,8 +114,9 @@ try:
 	# kill abr algorithm server
 	proc.send_signal(signal.SIGINT)
 	# proc.kill()
-	
+	dp(f"----finished: {trace_file}")
 	print('done')
+
 	
 except Exception as e:
 	try: 

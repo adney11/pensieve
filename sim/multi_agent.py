@@ -34,9 +34,9 @@ TEST_LOG_FOLDER = './test_results/'
 TRAIN_TRACES = './cooked_traces/'
 # NN_MODEL = './results/pretrain_linear_reward.ckpt'
 #NN_MODEL = None
-NN_MODEL = './results/nn_model_ep_5000.ckpt'
+NN_MODEL = './results/nn_model_ep_2500.ckpt'
 
-MODEL_TRAINING_EPOCH_LIMIT = 5000
+MODEL_TRAINING_EPOCH_LIMIT = 2500
 
 def testing(epoch, nn_model, log_file):
     # clean up the test results folder
@@ -383,7 +383,9 @@ def main():
         agents[i].start()
 
     # wait unit training is done
+    print("waiting for coordinator to return....")
     coordinator.join()
+    print("coordinator joined - finished!")
 
 
 if __name__ == '__main__':

@@ -45,7 +45,7 @@ def main():
 			
 			command = 'mm-delay ' + str(MM_DELAY) + \
 					  ' mm-link 12mbps ' + trace_path + f + ' ' +	\
-					  '/usr/bin/python3.6 ' + RUN_SCRIPT + ' ' + ip + ' ' + \
+					  'python ' + RUN_SCRIPT + ' ' + ip + ' ' + \
 					  abr_algo + ' ' + str(RUN_TIME) + ' ' + \
 					  process_id + ' ' + f + ' ' + str(sleep_time)
 
