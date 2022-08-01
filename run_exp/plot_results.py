@@ -12,8 +12,8 @@ VIDEO_LEN = 64
 VIDEO_BIT_RATE = [350, 600, 1000, 2000, 3000]
 COLOR_MAP = plt.cm.jet #nipy_spectral, Set1,Paired 
 SIM_DP = 'sim_dp'
-SCHEMES = ['BB', 'RB', 'FIXED', 'FESTIVE', 'BOLA', 'RL',  'sim_rl', SIM_DP]
-
+#SCHEMES = ['BB', 'RB', 'FIXED', 'FESTIVE', 'BOLA', 'RL',  'sim_rl', SIM_DP]
+SCHEMES = ['RL']
 
 def main():
 	time_all = {}
@@ -38,9 +38,11 @@ def main():
 		bw = []
 		reward = []
 
-		print log_file
-
-		with open(RESULTS_FOLDER + log_file, 'rb') as f:
+		print(log_file)
+		if not os.path.isfile(RESULTS_FOLDER + log_file):
+			print(f"{log_file} is a directory!")
+			continue
+		with open(RESULTS_FOLDER + log_file, 'r') as f:
 			if SIM_DP in log_file:
 				for line in f:
 					parse = line.split()

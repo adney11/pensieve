@@ -7,7 +7,7 @@ import numpy as np
 RUN_SCRIPT = 'run_video.py'
 RANDOM_SEED = 42
 RUN_TIME = 320  # sec
-MM_DELAY = 40   # millisec
+MM_DELAY = 10   # millisec
 
 run_count = os.getenv('RUN_COUNT')
 

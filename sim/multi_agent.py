@@ -44,7 +44,7 @@ def testing(epoch, nn_model, log_file):
     os.system('mkdir ' + TEST_LOG_FOLDER)
     
     # run test script
-    os.system('python3 rl_test.py ' + nn_model)
+    os.system('python rl_test.py ' + nn_model)
     
     # append test performance to the log
     rewards = []
