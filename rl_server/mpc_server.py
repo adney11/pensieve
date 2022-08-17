@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
-import SocketServer
+#from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+#import SocketServer
+from http.server import HTTPServer, BaseHTTPRequestHandler
 import base64
 import urllib
 import sys
@@ -12,6 +13,12 @@ os.environ['CUDA_VISIBLE_DEVICES']=''
 import numpy as np
 import time
 import itertools
+
+
+import logging
+LOG = None
+
+
 
 ######################## FAST MPC #######################
 
@@ -35,7 +42,8 @@ RAND_RANGE = 1000
 SUMMARY_DIR = './results'
 LOG_FILE = './results/log'
 # in format of time_stamp bit_rate buffer_size rebuffer_time video_chunk_size download_time reward
-NN_MODEL = None
+#NN_MODEL = None
+NN_MODEL = '/newhome/pensieve/rl_server/results/pensieve_6mbps_3mbps_oscillating.ckpt'
 
 CHUNK_COMBO_OPTIONS = []
 
@@ -69,12 +77,12 @@ def make_request_handler(input_dict):
         def do_POST(self):
             content_length = int(self.headers['Content-Length'])
             post_data = json.loads(self.rfile.read(content_length))
-            print post_data
+            LOG.info(post_data)
 
             if ( 'pastThroughput' in post_data ):
                 # @Hongzi: this is just the summary of throughput/quality at the end of the load
                 # so we don't want to use this information to send back a new quality
-                print "Summary: ", post_data
+                LOG.info(f"Summary: {post_data}")
             else:
                 # option 1. reward for just quality
                 # reward = post_data['lastquality']
@@ -249,7 +257,7 @@ def make_request_handler(input_dict):
                 self.send_header('Content-Length', len(send_data))
                 self.send_header('Access-Control-Allow-Origin', "*")
                 self.end_headers()
-                self.wfile.write(send_data)
+                self.wfile.write(send_data.encode())
 
                 # record [state, action, reward]
                 # put it here after training, notice there is a shift in reward storage
@@ -260,13 +268,13 @@ def make_request_handler(input_dict):
                     self.s_batch.append(state)
 
         def do_GET(self):
-            print >> sys.stderr, 'GOT REQ'
+            LOG.error('GOT REQ')
             self.send_response(200)
             #self.send_header('Cache-Control', 'Cache-Control: no-cache, no-store, must-revalidate max-age=0')
             self.send_header('Cache-Control', 'max-age=3000')
             self.send_header('Content-Length', 20)
             self.end_headers()
-            self.wfile.write("console.log('here');")
+            self.wfile.write("console.log('here');".encode())
 
         def log_message(self, format, *args):
             return
@@ -285,7 +293,7 @@ def run(server_class=HTTPServer, port=8333, log_file_path=LOG_FILE):
     for combo in itertools.product([0,1,2,3,4,5], repeat=5):
         CHUNK_COMBO_OPTIONS.append(combo)
 
-    with open(log_file_path, 'wb') as log_file:
+    with open(log_file_path, 'w') as log_file:
 
         s_batch = [np.zeros((S_INFO, S_LEN))]
 
@@ -307,13 +315,17 @@ def run(server_class=HTTPServer, port=8333, log_file_path=LOG_FILE):
 
         server_address = ('localhost', port)
         httpd = server_class(server_address, handler_class)
-        print 'Listening on port ' + str(port)
+        LOG.info('Listening on port ' + str(port))
         httpd.serve_forever()
 
 
 def main():
     if len(sys.argv) == 2:
         trace_file = sys.argv[1]
+        logging.basicConfig(filename=f'./logs/{trace_file}-mpc_server.log', level=logging.DEBUG)
+        global LOG
+        LOG = logging.getLogger(__name__)
+        print('log file set')
         run(log_file_path=LOG_FILE + '_fastMPC_' + trace_file)
     else:
         run()
@@ -323,7 +335,7 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print "Keyboard interrupted."
+        LOG.info("Keyboard interrupted.")
         try:
             sys.exit(0)
         except SystemExit:

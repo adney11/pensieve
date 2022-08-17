@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
-from http.server import HTTPServer, BaseHTTPRequestHandler
 #import SocketServer
+from http.server import HTTPServer, BaseHTTPRequestHandler
 import base64
 import urllib
 import sys
@@ -16,8 +16,9 @@ import time
 import a3c
 
 import logging
-logging.basicConfig(filename='logs/rl_server_no_training.log', level=logging.DEBUG)
-LOG = logging.getLogger(__name__)
+LOG = None
+#logging.basicConfig(filename='logs/rl_server_no_training.log', level=logging.DEBUG)
+#LOG = logging.getLogger(__name__)
 
 S_INFO = 6  # bit_rate, buffer_size, rebuffering_time, bandwidth_measurement, chunk_til_video_end
 S_LEN = 8  # take how many frames in the past
@@ -275,8 +276,12 @@ def run(server_class=HTTPServer, port=8333, log_file_path=LOG_FILE):
 
 def main():
     if len(sys.argv) == 2:
-        trace_file = sys.argv[1]
-        run(log_file_path=LOG_FILE + '_RL_' + trace_file)
+        logfilename = sys.argv[1]
+        logging.basicConfig(filename=f'./logs/{logfilename}-rl_server_no_training.log', level=logging.DEBUG)
+        global LOG
+        LOG = logging.getLogger(__name__)
+        print('log file set')
+        run(log_file_path=LOG_FILE + '_RL_' + logfilename)
     else:
         run()
 

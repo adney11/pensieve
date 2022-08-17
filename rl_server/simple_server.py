@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
-import SocketServer
+#from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
+#import SocketServer
+from http.server import HTTPServer, BaseHTTPRequestHandler
 import base64
 import urllib
 import sys
@@ -11,6 +12,10 @@ import json
 from collections import deque
 import numpy as np
 import time
+
+
+import logging
+LOG = None
 
 
 VIDEO_BIT_RATE = [300,750,1200,1850,2850,4300]  # Kbps
@@ -38,7 +43,7 @@ def make_request_handler(input_dict):
             content_length = int(self.headers['Content-Length'])
             post_data = json.loads(self.rfile.read(content_length))
             
-            print post_data
+            LOG.info(f"got post data: {post_data}")
             send_data = ""
 
             if ( 'lastquality' in post_data ):
@@ -78,16 +83,16 @@ def make_request_handler(input_dict):
             self.send_header('Content-Length', len(send_data))
             self.send_header('Access-Control-Allow-Origin', "*")
             self.end_headers()
-            self.wfile.write(send_data)
+            self.wfile.write(send_data.encode())
 
         def do_GET(self):
-            print >> sys.stderr, 'GOT REQ'
+            LOG.error('GOT REQ')
             self.send_response(200)
             #self.send_header('Cache-Control', 'Cache-Control: no-cache, no-store, must-revalidate max-age=0')
             self.send_header('Cache-Control', 'max-age=3000')
             self.send_header('Content-Length', 20)
             self.end_headers()
-            self.wfile.write("console.log('here');")
+            self.wfile.write("console.log('here');".encode())
 
         def log_message(self, format, *args):
             return
@@ -100,7 +105,7 @@ def run(server_class=HTTPServer, port=8333, log_file_path=LOG_FILE):
     if not os.path.exists(SUMMARY_DIR):
         os.makedirs(SUMMARY_DIR)
 
-    with open(log_file_path, 'wb') as log_file:
+    with open(log_file_path, 'w') as log_file:
 
         last_bit_rate = DEFAULT_QUALITY
         last_total_rebuf = 0 
@@ -112,7 +117,7 @@ def run(server_class=HTTPServer, port=8333, log_file_path=LOG_FILE):
 
         server_address = ('localhost', port)
         httpd = server_class(server_address, handler_class)
-        print 'Listening on port ' + str(port)
+        LOG.info('Listening on port ' + str(port))
         httpd.serve_forever()
 
 
@@ -120,6 +125,12 @@ def main():
     if len(sys.argv) == 3:
         abr_algo = sys.argv[1]
         trace_file = sys.argv[2]
+
+        logging.basicConfig(filename=f'./logs/{trace_file}-{abr_algo}-simple_server.log', level=logging.DEBUG)
+        global LOG
+        LOG = logging.getLogger(__name__)
+        print('log file set')
+
         run(log_file_path=LOG_FILE + '_' + abr_algo + '_' + trace_file)
     else:
         run()
@@ -128,7 +139,7 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        logging.debug("Keyboard interrupted.")
+        LOG.debug("Keyboard interrupted.")
         try:
             sys.exit(0)
         except SystemExit:
