@@ -24,13 +24,6 @@ from time import sleep
 # if they are at those locations, don't need to specify
 
 
-import logging
-logging.basicConfig(filename='logs/run_video.log', level=logging.DEBUG)
-LOG = logging.getLogger(__name__)
-
-def dp(msg):
-	LOG.debug(msg)
-
 def timeout_handler(signum, frame):
 	raise Exception("Timeout")
 
@@ -40,6 +33,13 @@ run_time = int(sys.argv[3])
 process_id = sys.argv[4]
 trace_file = sys.argv[5]
 sleep_time = sys.argv[6]
+
+import logging
+logging.basicConfig(filename=f'./logs/{trace_file}-{abr_algo}-run_video.log', level=logging.DEBUG)
+LOG = logging.getLogger(__name__)
+
+def dp(msg):
+	LOG.debug(msg)
 	
 # prevent multiple process from being synchronized
 sleep(int(sleep_time))
@@ -65,12 +65,14 @@ try:
 	if abr_algo == 'RL':
 		command = 'exec python ../rl_server/rl_server_no_training.py ' + trace_file
 	elif abr_algo == 'fastMPC':
-		command = 'exec /usr/bin/python3.6 ../rl_server/mpc_server.py ' + trace_file
+		command = 'exec python ../rl_server/mpc_server.py ' + trace_file
 	elif abr_algo == 'robustMPC':
-		command = 'exec /usr/bin/python3.6 ../rl_server/robust_mpc_server.py ' + trace_file
+		command = 'exec python ../rl_server/robust_mpc_server.py ' + trace_file
 	else:
-		command = 'exec /usr/bin/python3.6 ../rl_server/simple_server.py ' + abr_algo + ' ' + trace_file
+		command = 'exec python ../rl_server/simple_server.py ' + abr_algo + ' ' + trace_file
 	
+
+	dp(f"running: {command}")
 	proc = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 	sleep(2)
 	
@@ -89,6 +91,7 @@ try:
 	options.add_argument('--ignore-certificate-errors')
 	options.add_argument('--disable-web-security')
 	options.add_argument('--autoplay-policy=no-user-gesture-required')
+	options.add_argument('--dns-prefetch-disable')
 	experimentalFlags = ['block-insecure-private-network-requests@2']
 	chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
 	options.add_experimental_option('localState', chromeLocalStatePrefs)

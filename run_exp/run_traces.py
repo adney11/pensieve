@@ -13,17 +13,20 @@ run_count = os.getenv('RUN_COUNT')
 
 
 import logging
-logging.basicConfig(filename='logs/run_traces.log', level=logging.DEBUG)
-LOG = logging.getLogger(__name__)
-
-def dp(msg):
-	LOG.debug(msg)
+global LOG
 
 def main():
 	trace_path = sys.argv[1]
 	abr_algo = sys.argv[2]
 	process_id = sys.argv[3]
 	ip = sys.argv[4]
+
+	logging.basicConfig(filename=f'./logs/{abr_algo}-run_traces.log', level=logging.DEBUG)
+	LOG = logging.getLogger(__name__)
+
+	def dp(msg):
+		LOG.debug(msg)
+
 
 	sleep_vec = [i for i in range(1, 10)]  # random sleep second
 
