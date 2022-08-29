@@ -43,7 +43,7 @@ SUMMARY_DIR = './results'
 LOG_FILE = './results/log'
 # in format of time_stamp bit_rate buffer_size rebuffer_time video_chunk_size download_time reward
 # NN_MODEL = None
-NN_MODEL = '/newhome/pensieve/rl_server/results/pensieve_6mbps_3mbps_oscillating.ckpt'
+NN_MODEL = '/newhome/pensieve/rl_server/results/pensieve_random_every2sec_hdreward.ckpt'
 
 # video chunk sizes
 size_video1 = [2354772, 2123065, 2177073, 2160877, 2233056, 1941625, 2157535, 2290172, 2055469, 2169201, 2173522, 2102452, 2209463, 2275376, 2005399, 2152483, 2289689, 2059512, 2220726, 2156729, 2039773, 2176469, 2221506, 2044075, 2186790, 2105231, 2395588, 1972048, 2134614, 2164140, 2113193, 2147852, 2191074, 2286761, 2307787, 2143948, 1919781, 2147467, 2133870, 2146120, 2108491, 2184571, 2121928, 2219102, 2124950, 2246506, 1961140, 2155012, 1433658]
@@ -99,10 +99,10 @@ def make_request_handler(input_dict):
                 rebuffer_time = float(post_data['RebufferTime'] -self.input_dict['last_total_rebuf'])
 
                 # --linear reward--
-                reward = VIDEO_BIT_RATE[post_data['lastquality']] / M_IN_K \
-                        - REBUF_PENALTY * rebuffer_time / M_IN_K \
-                        - SMOOTH_PENALTY * np.abs(VIDEO_BIT_RATE[post_data['lastquality']] -
-                                                  self.input_dict['last_bit_rate']) / M_IN_K
+                # reward = VIDEO_BIT_RATE[post_data['lastquality']] / M_IN_K \
+                #         - REBUF_PENALTY * rebuffer_time / M_IN_K \
+                #         - SMOOTH_PENALTY * np.abs(VIDEO_BIT_RATE[post_data['lastquality']] -
+                #                                   self.input_dict['last_bit_rate']) / M_IN_K
 
                 # --log reward--
                 # log_bit_rate = np.log(VIDEO_BIT_RATE[post_data['lastquality']] / float(VIDEO_BIT_RATE[0]))   
@@ -113,8 +113,8 @@ def make_request_handler(input_dict):
                 #          - SMOOTH_PENALTY * np.abs(log_bit_rate - log_last_bit_rate)
 
                 # --hd reward--
-                # reward = BITRATE_REWARD[post_data['lastquality']] \
-                #         - 8 * rebuffer_time / M_IN_K - np.abs(BITRATE_REWARD[post_data['lastquality']] - BITRATE_REWARD_MAP[self.input_dict['last_bit_rate']])
+                reward = BITRATE_REWARD[post_data['lastquality']] \
+                        - 8 * rebuffer_time / M_IN_K - np.abs(BITRATE_REWARD[post_data['lastquality']] - BITRATE_REWARD_MAP[self.input_dict['last_bit_rate']])
 
                 self.input_dict['last_bit_rate'] = VIDEO_BIT_RATE[post_data['lastquality']]
                 self.input_dict['last_total_rebuf'] = post_data['RebufferTime']

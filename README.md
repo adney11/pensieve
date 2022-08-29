@@ -1,3 +1,14 @@
+# Adney's notes;
+ - need to install google chrome v54 use this link:
+ ```
+ wget http://170.210.201.179/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_54.0.2840.90-1_amd64.deb
+ ```
+- need to install these for pensieve run_video
+```
+pip install selenium==3 pyvirtualdisplay webdriver_manager
+```
+
+
 # Pensieve
 Pensieve is a system that generates adaptive bitrate algorithms using reinforcement learning.
 http://web.mit.edu/pensieve/
@@ -37,3 +48,5 @@ This script will run all schemes (buffer-based, rate-based, Festive, BOLA, fastM
 python run_exp.py
 ```
 The results will be saved to `real_exp/results` folder. More details can be found in `real_exp/README.md`.
+
+

@@ -1,21 +1,21 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-
+import sys
 
 RESULTS_FOLDER = './results/'
 NUM_BINS = 100
 BITS_IN_BYTE = 8.0
 MILLISEC_IN_SEC = 1000.0
 M_IN_B = 1000000.0
-VIDEO_LEN = 64
+VIDEO_LEN = 48
 VIDEO_BIT_RATE = [350, 600, 1000, 2000, 3000]
 COLOR_MAP = plt.cm.jet #nipy_spectral, Set1,Paired 
 SIM_DP = 'sim_dp'
-#SCHEMES = ['BB', 'RB', 'FIXED', 'FESTIVE', 'BOLA', 'RL',  'sim_rl', SIM_DP]
-SCHEMES = ['RL']
+SCHEMES = ['BB', 'RB', 'FIXED', 'FESTIVE', 'BOLA', 'RL']
+#SCHEMES = ['RL']
 
-def main():
+def main(tname = "current"):
 	time_all = {}
 	bit_rate_all = {}
 	buff_all = {}
@@ -84,7 +84,7 @@ def main():
 				bw_all[scheme][log_file[len('log_' + str(scheme) + '_'):]] = bw
 				raw_reward_all[scheme][log_file[len('log_' + str(scheme) + '_'):]] = reward
 				break
-
+		print(time_all)
 	# ---- ---- ---- ----
 	# Reward records
 	# ---- ---- ---- ----
@@ -95,9 +95,12 @@ def main():
 		reward_all[scheme] = []
 
 	for l in time_all[SCHEMES[0]]:
+		print(f"l: {l}")
 		schemes_check = True
 		for scheme in SCHEMES:
-			if l not in time_all[scheme] or len(time_all[scheme][l]) < VIDEO_LEN:
+			if l not in time_all[scheme]: # or len(time_all[scheme][l]) < VIDEO_LEN
+				print("schemes_check set to false")
+				print(f"scheme: {scheme} len(time_all[scheme][l] = {len(time_all[scheme][l])}")
 				schemes_check = False
 				break
 		if schemes_check:
@@ -106,10 +109,11 @@ def main():
 				if scheme == SIM_DP:
 					reward_all[scheme].append(raw_reward_all[scheme][l])
 				else:
-					reward_all[scheme].append(np.sum(raw_reward_all[scheme][l][1:VIDEO_LEN]))
+					reward_all[scheme].append(np.sum(raw_reward_all[scheme][l][1:]))
 
 	mean_rewards = {}
 	for scheme in SCHEMES:
+		print(reward_all[scheme])
 		mean_rewards[scheme] = np.mean(reward_all[scheme])
 
 	fig = plt.figure()
@@ -130,7 +134,8 @@ def main():
 	
 	plt.ylabel('total reward')
 	plt.xlabel('trace index')
-	plt.show()
+	#plt.show()
+	plt.savefig(f'plots/{tname}-reward.png')
 
 	# ---- ---- ---- ----
 	# CDF 
@@ -152,7 +157,8 @@ def main():
 	
 	plt.ylabel('CDF')
 	plt.xlabel('total reward')
-	plt.show()
+	plt.savefig(f'plots/{tname}-cdf.png')
+	#plt.show()
 
 
 	# ---- ---- ---- ----
@@ -164,6 +170,7 @@ def main():
 		for scheme in SCHEMES:
 			if l not in time_all[scheme] or len(time_all[scheme][l]) < VIDEO_LEN:
 				schemes_check = False
+				
 				break
 		if schemes_check:
 			fig = plt.figure()
@@ -202,8 +209,12 @@ def main():
 					SCHEMES_REW.append(scheme + ': ' + str(np.sum(raw_reward_all[scheme][l][1:VIDEO_LEN])))
 
 			ax.legend(SCHEMES_REW, loc=9, bbox_to_anchor=(0.5, -0.1), ncol=int(np.ceil(len(SCHEMES) / 2.0)))
-			plt.show()
+			#plt.show()
+			plt.savefig(f'plots/{tname}-main.png')
 
 
 if __name__ == '__main__':
-	main()
+	if len(sys.argv) < 2:
+		main()
+	else:
+		main(tname = sys.argv[1])

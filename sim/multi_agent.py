@@ -8,6 +8,7 @@ import tensorflow as tf
 import env
 import a3c
 import load_trace
+import sys
 
 
 S_INFO = 6  # bit_rate, buffer_size, next_chunk_size, bandwidth_measurement(throughput and time), chunk_til_video_end
@@ -34,9 +35,10 @@ TEST_LOG_FOLDER = './test_results/'
 TRAIN_TRACES = './cooked_traces/'
 # NN_MODEL = './results/pretrain_linear_reward.ckpt'
 #NN_MODEL = None
-NN_MODEL = './results/nn_model_ep_2500.ckpt'
+NN_MODEL = './results/nn_model_ep_5000.ckpt'
+REWARD_TYPE = 'hd'
 
-MODEL_TRAINING_EPOCH_LIMIT = 2500
+MODEL_TRAINING_EPOCH_LIMIT = 5000
 
 def testing(epoch, nn_model, log_file):
     # clean up the test results folder
@@ -198,6 +200,7 @@ def central_agent(net_params_queues, exp_queues):
                 save_path = saver.save(sess, SUMMARY_DIR + "/nn_model_ep_" +
                                        str(epoch) + ".ckpt")
                 logging.info("Model saved in file: " + save_path)
+                print(f"Epoch: {epoch} saved ########################")
                 testing(epoch, 
                     SUMMARY_DIR + "/nn_model_ep_" + str(epoch) + ".ckpt", 
                     test_log_file)
@@ -251,25 +254,30 @@ def agent(agent_id, all_cooked_time, all_cooked_bw, net_params_queue, exp_queue)
             time_stamp += delay  # in ms
             time_stamp += sleep_time  # in ms
 
-            # -- linear reward --
-            # reward is video quality - rebuffer penalty - smoothness
-            reward = VIDEO_BIT_RATE[bit_rate] / M_IN_K \
-                     - REBUF_PENALTY * rebuf \
-                     - SMOOTH_PENALTY * np.abs(VIDEO_BIT_RATE[bit_rate] -
-                                               VIDEO_BIT_RATE[last_bit_rate]) / M_IN_K
+            if REWARD_TYPE == 'linear':
+                # -- linear reward --
+                # reward is video quality - rebuffer penalty - smoothness
+                reward = VIDEO_BIT_RATE[bit_rate] / M_IN_K \
+                         - REBUF_PENALTY * rebuf \
+                         - SMOOTH_PENALTY * np.abs(VIDEO_BIT_RATE[bit_rate] -
+                                                   VIDEO_BIT_RATE[last_bit_rate]) / M_IN_K
+            elif REWARD_TYPE == 'log':
+                # -- log scale reward --
+                log_bit_rate = np.log(VIDEO_BIT_RATE[bit_rate] / float(VIDEO_BIT_RATE[-1]))
+                log_last_bit_rate = np.log(VIDEO_BIT_RATE[last_bit_rate] / float(VIDEO_BIT_RATE[-1]))
 
-            # -- log scale reward --
-            # log_bit_rate = np.log(VIDEO_BIT_RATE[bit_rate] / float(VIDEO_BIT_RATE[-1]))
-            # log_last_bit_rate = np.log(VIDEO_BIT_RATE[last_bit_rate] / float(VIDEO_BIT_RATE[-1]))
+                reward = log_bit_rate \
+                         - REBUF_PENALTY * rebuf \
+                         - SMOOTH_PENALTY * np.abs(log_bit_rate - log_last_bit_rate)
 
-            # reward = log_bit_rate \
-            #          - REBUF_PENALTY * rebuf \
-            #          - SMOOTH_PENALTY * np.abs(log_bit_rate - log_last_bit_rate)
-
-            # -- HD reward --
-            # reward = HD_REWARD[bit_rate] \
-            #          - REBUF_PENALTY * rebuf \
-            #          - SMOOTH_PENALTY * np.abs(HD_REWARD[bit_rate] - HD_REWARD[last_bit_rate])
+            elif REWARD_TYPE == 'hd':
+                # -- HD reward --
+                reward = HD_REWARD[bit_rate] \
+                        - REBUF_PENALTY * rebuf \
+                        - SMOOTH_PENALTY * np.abs(HD_REWARD[bit_rate] - HD_REWARD[last_bit_rate])
+            else:
+                logging.debug("WRONG REWARD TYPE")
+                sys.exit(0)
 
             r_batch.append(reward)
 

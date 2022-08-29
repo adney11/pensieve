@@ -1,10 +1,10 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
-
-DATA_PATH = './mahimahi/'
-OUTPUT_PATH = './mahimahi_chunks/'
+DATA_PATH = sys.argv[1]
+OUTPUT_PATH = './mm_chunked/'
 BYTES_PER_PKT = 1500.0
 MILLISEC_IN_SEC = 1000.0
 BITS_IN_BYTE = 8.0
@@ -25,10 +25,10 @@ def main():
 		file_path = DATA_PATH +  file
 		output_path = OUTPUT_PATH + file
 
-		print file_path
+		print(file_path)
 
 		mahimahi_win = []
-		with open(file_path, 'rb') as f:
+		with open(file_path, 'r') as f:
 			for line in f:
 				mahimahi_win.append(float(line.split()[0]))
 
@@ -41,13 +41,13 @@ def main():
 			if end_time * MILLISEC_IN_SEC > np.max(mahimahi_win): 
 				break
 
-			print "start time", start_time
+			print("start time", start_time)
 
 			start_ptr = find_nearest(mahimahi_win, start_time * MILLISEC_IN_SEC)
 			end_ptr = find_nearest(mahimahi_win, end_time * MILLISEC_IN_SEC)
 
-			with open(output_path + '_' + str(int(start_time)), 'wb') as f:
-				for i in xrange(start_ptr, end_ptr + 1):
+			with open(output_path + '_' + str(int(start_time)), 'w') as f:
+				for i in range(start_ptr, end_ptr + 1):
 					towrite = mahimahi_win[i] - mahimahi_win[start_ptr]
 					f.write(str(int(towrite)) + '\n')
 
