@@ -34,10 +34,10 @@ LOG_FILE = './results/log'
 TEST_LOG_FOLDER = './test_results/'
 TRAIN_TRACES = './cooked_traces/'
 # NN_MODEL = './results/pretrain_linear_reward.ckpt'
+
 #NN_MODEL = None
 NN_MODEL = './results/nn_model_ep_5000.ckpt'
-REWARD_TYPE = 'hd'
-
+REWARD_TYPE = 'log'
 MODEL_TRAINING_EPOCH_LIMIT = 5000
 
 def testing(epoch, nn_model, log_file):
@@ -67,15 +67,19 @@ def testing(epoch, nn_model, log_file):
     rewards_min = np.min(rewards)
     rewards_5per = np.percentile(rewards, 5)
     rewards_mean = np.mean(rewards)
+    rewards_q1 = np.percentile(rewards, 25)
     rewards_median = np.percentile(rewards, 50)
     rewards_95per = np.percentile(rewards, 95)
+    rewards_q3 = np.percentile(rewards, 75)
     rewards_max = np.max(rewards)
 
     log_file.write(str(epoch) + '\t' +
                    str(rewards_min) + '\t' +
                    str(rewards_5per) + '\t' +
                    str(rewards_mean) + '\t' +
+                   str(rewards_q1) + '\t' +
                    str(rewards_median) + '\t' +
+                   str(rewards_q3) + '\t' +
                    str(rewards_95per) + '\t' +
                    str(rewards_max) + '\n')
     log_file.flush()
@@ -263,8 +267,8 @@ def agent(agent_id, all_cooked_time, all_cooked_bw, net_params_queue, exp_queue)
                                                    VIDEO_BIT_RATE[last_bit_rate]) / M_IN_K
             elif REWARD_TYPE == 'log':
                 # -- log scale reward --
-                log_bit_rate = np.log(VIDEO_BIT_RATE[bit_rate] / float(VIDEO_BIT_RATE[-1]))
-                log_last_bit_rate = np.log(VIDEO_BIT_RATE[last_bit_rate] / float(VIDEO_BIT_RATE[-1]))
+                log_bit_rate = np.log(VIDEO_BIT_RATE[bit_rate] / float(VIDEO_BIT_RATE[0]))
+                log_last_bit_rate = np.log(VIDEO_BIT_RATE[last_bit_rate] / float(VIDEO_BIT_RATE[0]))  # ADNEY FIXED -  it was using highest bitrate, instead of lowest
 
                 reward = log_bit_rate \
                          - REBUF_PENALTY * rebuf \
