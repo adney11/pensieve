@@ -48,7 +48,7 @@ def main():
     net_env = env.Environment(all_cooked_time=all_cooked_time,
                               all_cooked_bw=all_cooked_bw)
 
-    with tf.Session() as sess, open(LOG_FILE, 'wb') as log_file:
+    with tf.Session() as sess, open(LOG_FILE, 'w') as log_file:
 
         actor = a3c.ActorNetwork(sess,
                                  state_dim=[S_INFO, S_LEN], action_dim=A_DIM,
@@ -183,7 +183,7 @@ def main():
                     # actor.apply_gradients(assembled_actor_gradient)
                     # critic.apply_gradients(assembled_critic_gradient)
 
-                    for i in xrange(len(actor_gradient_batch)):
+                    for i in range(len(actor_gradient_batch)):
                         actor.apply_gradients(actor_gradient_batch[i])
                         critic.apply_gradients(critic_gradient_batch[i])
 

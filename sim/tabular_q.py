@@ -54,9 +54,9 @@ class Tabular_Q(object):
             # initialize the q table
             for bw in np.linspace(BW_MIN, BW_MAX, (BW_MAX - BW_MIN) / D_BW + 1):
                 for bf in np.linspace(BF_MIN, BF_MAX, (BF_MAX - BF_MIN) / D_BF + 1):
-                    for br in xrange(BR_LV):
-                        for c in xrange(N_CHUNK):
-                            for a in xrange(BR_LV):
+                    for br in range(BR_LV):
+                        for c in range(N_CHUNK):
+                            for a in range(BR_LV):
                                 self.q_table[(bw, bf, br, c, a)] = 0.0
 
         self.exp_rate = 1.0
@@ -72,7 +72,7 @@ class Tabular_Q(object):
         else:
             max_q = - np.inf
             act = -1
-            for a in xrange(BR_LV):
+            for a in range(BR_LV):
                 q = self.q_table[(bw, bf, br, c, a)]
                 if q > max_q:
                     act = a
@@ -99,7 +99,7 @@ class Tabular_Q(object):
             max_next_q = 0
         else:
             max_next_q = - np.inf        
-            for a in xrange(BR_LV):
+            for a in range(BR_LV):
                 q = self.q_table[(n_bw, n_bf, n_br, n_c, a)]
                 if q > max_next_q:
                     max_next_q = q
@@ -123,7 +123,7 @@ def testing(tabular_q, epoch):
         all_cooked_bw=all_cooked_bw)
 
     log_path = TEST_LOG_FOLDER + 'log_' + all_file_names[test_net_env.trace_idx]
-    log_file = open(log_path, 'wb')
+    log_file = open(log_path, 'w')
 
     time_stamp = 0
     video_count = 0
@@ -185,15 +185,15 @@ def testing(tabular_q, epoch):
                 break
 
             log_path = TEST_LOG_FOLDER + 'log_' + all_file_names[test_net_env.trace_idx]
-            log_file = open(log_path, 'wb')
+            log_file = open(log_path, 'w')
 
-    with open(TEST_LOG_PATH, 'ab') as log_file:
+    with open(TEST_LOG_PATH, 'a') as log_file:
          # append test performance to the log
         rewards = []
         test_log_files = os.listdir(TEST_LOG_FOLDER)
         for test_log_file in test_log_files:
             reward = []
-            with open(TEST_LOG_FOLDER + test_log_file, 'rb') as f:
+            with open(TEST_LOG_FOLDER + test_log_file, 'r') as f:
                 for line in f:
                     parse = line.split()
                     try:

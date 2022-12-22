@@ -1,20 +1,26 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+import os
 
+
+if len(sys.argv) < 2:
+    print("provide path to trace file")
+    sys.exit()
 
 PACKET_SIZE = 1500.0  # bytes
 BITS_IN_BYTE = 8.0
 MBITS_IN_BITS = 1000000.0
 MILLISECONDS_IN_SECONDS = 1000.0
 N = 100
-LINK_FILE = './201606/mahimahi/trace_9996_http---www.youtube.com'
+LINK_FILE = sys.argv[1]
 
 
 time_all = []
 packet_sent_all = []
 last_time_stamp = 0
 packet_sent = 0
-with open(LINK_FILE, 'rb') as f:
+with open(LINK_FILE, 'r') as f:
 	for line in f:
 		time_stamp = int(line.split()[0])
 		if time_stamp == last_time_stamp:
@@ -34,9 +40,14 @@ throuput_all = PACKET_SIZE * \
 			   MILLISECONDS_IN_SECONDS / \
 			   MBITS_IN_BITS
 
-print throuput_all
-plt.plot(np.array(time_all[1:]) / MILLISECONDS_IN_SECONDS, 
-		 np.convolve(throuput_all, np.ones(N,)/N, mode='same'))
+print(throuput_all)
+# plt.plot(np.array(time_all[1:]) / MILLISECONDS_IN_SECONDS, 
+# 		 np.convolve(throuput_all, np.ones(N,)/N, mode='same'))
+plt.plot(np.array(time_all[1:]) / MILLISECONDS_IN_SECONDS, throuput_all)
 plt.xlabel('Time (second)')
 plt.ylabel('Throughput (Mbit/sec)')
-plt.show()
+plt.title(f"{LINK_FILE.split('/')[1]}")
+#plt.show()
+if not os.path.exists("mahimahi_plots"):
+    os.mkdir("mahimahi_plots")
+plt.savefig(f"mahimahi_plots/{LINK_FILE.split('/')[1]}.png")
