@@ -26,7 +26,7 @@ latency=10
 qsize=30
 log="custom-$scheme-$down-$up-$latency-${period}-$qsize-$abr_algo"
 
-
+sudo killall -s15 python customizable_http_server Xvfb chrome chromedriver
 ./customizable_http_server $port $trace_dir $scheme 0 $down $up $latency $result_dir $log $qsize $abr_algo
 
 # wait and clean up
