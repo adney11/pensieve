@@ -6,7 +6,7 @@ import numpy as np
 
 RUN_SCRIPT = 'run_video.py'
 RANDOM_SEED = 42
-RUN_TIME = 320  # sec
+RUN_TIME = 240  # sec
 MM_DELAY = 10   # millisec
 
 run_count = os.getenv('RUN_COUNT')
@@ -37,6 +37,8 @@ def main():
 	else:
 		run_count = int(run_count)
 	cnt = 0
+ 
+	done_log = open(f'./logs/{abr_algo}-done_log', "a")
 	for f in files:
 		if cnt >= run_count:
 			break
@@ -47,8 +49,8 @@ def main():
 			sleep_time = sleep_vec[int(process_id)]
 			
 			command = 'mm-delay ' + str(MM_DELAY) + \
-					  ' mm-link 12mbps ' + trace_path + f + ' ' +	\
-					  'python ' + RUN_SCRIPT + ' ' + ip + ' ' + \
+					  ' mm-link wired6 ' + trace_path + f + ' ' +	\
+					  '/users/acardoza/venv/bin/python ' + RUN_SCRIPT + ' ' + ip + ' ' + \
 					  abr_algo + ' ' + str(RUN_TIME) + ' ' + \
 					  process_id + ' ' + f + ' ' + str(sleep_time)
 
@@ -59,13 +61,15 @@ def main():
 			(out, err) = proc.communicate()
 			dp(f"type(out) = {type(out)} out.decode = {out.decode('utf-8')}")
 			if out.decode('utf-8') == 'done\n':
+				done_log.write(f + '\n')
 				break
 			else:
 				with open('./chrome_retry_log', 'a') as log:
 					log.write(abr_algo + '_' + f + '\n')
 					log.write("out: " + out.decode('utf-8') + '\n')
 					log.flush()
-
+	done_log.write("--finished--\n")
+	done_log.close()
 
 
 if __name__ == '__main__':

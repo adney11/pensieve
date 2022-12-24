@@ -11,7 +11,7 @@ def dp(msg):
 		print("DEBUG: " + msg)
 
 
-TRACE_PATH = './mahimahi_test_traces/' 
+TRACE_PATH = '/newhome/Orca/fcc_traces/' 
 
 with open('./chrome_retry_log', 'a') as f:
 	f.write('chrome retry log\n')
@@ -55,40 +55,43 @@ ABR_ALGO = 'RL'
 PROCESS_ID = 7
 command_RL = python_command + TRACE_PATH + ' ' + ABR_ALGO + ' ' + str(PROCESS_ID) + ' ' + ip
 
-dp(f"running command: {command_BB}")
-proc_BB = subprocess.Popen(command_BB, stdout=subprocess.PIPE, shell=True)
-time.sleep(0.1)
-dp(f"running command: {command_RB}")
-proc_RB = subprocess.Popen(command_RB, stdout=subprocess.PIPE, shell=True)
-time.sleep(0.1)
+# dp(f"running command: {command_BB}")
+# proc_BB = subprocess.Popen(command_BB, stdout=subprocess.PIPE, shell=True)
+# time.sleep(0.1)
 
-dp(f"running command: {command_FIXED}")
-proc_FIXED = subprocess.Popen(command_FIXED, stdout=subprocess.PIPE, shell=True)
-time.sleep(0.1)
-dp(f"running command: {command_FESTIVE}")
-proc_FESTIVE = subprocess.Popen(command_FESTIVE, stdout=subprocess.PIPE, shell=True)
-time.sleep(0.1)
-dp(f"running command: {command_BOLA}")
-proc_BOLA = subprocess.Popen(command_BOLA, stdout=subprocess.PIPE, shell=True)
-time.sleep(0.1)
+# dp(f"running command: {command_RB}")
+# proc_RB = subprocess.Popen(command_RB, stdout=subprocess.PIPE, shell=True)
+# time.sleep(0.1)
 
-dp(f"running command: {command_fastMPC}")
-proc_fastMPC = subprocess.Popen(command_fastMPC, stdout=subprocess.PIPE, shell=True)
-time.sleep(0.1)
+# dp(f"running command: {command_FIXED}")
+# proc_FIXED = subprocess.Popen(command_FIXED, stdout=subprocess.PIPE, shell=True)
+# time.sleep(0.1)
 
-dp(f"running command: {command_robustMPC}")
-proc_robustMPC = subprocess.Popen(command_robustMPC, stdout=subprocess.PIPE, shell=True)
-time.sleep(0.1)
+# dp(f"running command: {command_FESTIVE}")
+# proc_FESTIVE = subprocess.Popen(command_FESTIVE, stdout=subprocess.PIPE, shell=True)
+# time.sleep(0.1)
+
+# dp(f"running command: {command_BOLA}")
+# proc_BOLA = subprocess.Popen(command_BOLA, stdout=subprocess.PIPE, shell=True)
+# time.sleep(0.1)
+
+# dp(f"running command: {command_fastMPC}")
+# proc_fastMPC = subprocess.Popen(command_fastMPC, stdout=subprocess.PIPE, shell=True)
+# time.sleep(0.1)
+
+# dp(f"running command: {command_robustMPC}")
+# proc_robustMPC = subprocess.Popen(command_robustMPC, stdout=subprocess.PIPE, shell=True)
+# time.sleep(0.1)
 
 dp(f"running command: {command_RL}")
 proc_RL = subprocess.Popen(command_RL, stdout=subprocess.PIPE, shell=True)
 time.sleep(0.1)
 
-proc_BB.wait()
-proc_RB.wait()
-proc_FIXED.wait()
-proc_FESTIVE.wait()
-proc_BOLA.wait()
-proc_fastMPC.wait()
-proc_robustMPC.wait() 
+# proc_BB.wait()
+# proc_RB.wait()
+# proc_FIXED.wait()
+# proc_FESTIVE.wait()
+# proc_BOLA.wait()
+# proc_fastMPC.wait()
+# proc_robustMPC.wait() 
 proc_RL.wait()

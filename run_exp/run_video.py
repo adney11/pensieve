@@ -60,16 +60,17 @@ try:
 	os.system('cp -r ' + default_chrome_user_dir + ' ' + chrome_user_dir)
 	os.system('sudo chown -R acardoza ' + chrome_user_dir)
 	
+	mypython = '/users/acardoza/venv/bin/python'
 	# start abr algorithm server
 	dp("start abr algorithm server...")
 	if abr_algo == 'RL':
-		command = 'exec python ../rl_server/rl_server_no_training.py ' + trace_file
+		command = 'exec ' + mypython + ' ../rl_server/rl_server_no_training.py ' + trace_file
 	elif abr_algo == 'fastMPC':
-		command = 'exec python ../rl_server/mpc_server.py ' + trace_file
+		command = 'exec ' + mypython + ' ../rl_server/mpc_server.py ' + trace_file
 	elif abr_algo == 'robustMPC':
-		command = 'exec python ../rl_server/robust_mpc_server.py ' + trace_file
+		command = 'exec ' + mypython + ' ../rl_server/robust_mpc_server.py ' + trace_file
 	else:
-		command = 'exec python ../rl_server/simple_server.py ' + abr_algo + ' ' + trace_file
+		command = 'exec ' + mypython + ' ../rl_server/simple_server.py ' + abr_algo + ' ' + trace_file
 	
 
 	dp(f"running: {command}")
@@ -95,7 +96,12 @@ try:
 	experimentalFlags = ['block-insecure-private-network-requests@2']
 	chromeLocalStatePrefs = {'browser.enabled_labs_experiments': experimentalFlags}
 	options.add_experimental_option('localState', chromeLocalStatePrefs)
-	driver=webdriver.Chrome(chrome_driver, chrome_options=options)
+ 
+	try:
+		driver=webdriver.Chrome(chrome_driver, chrome_options=options)
+	except:
+		dp("failed to initialise driver, trying again")
+		driver=webdriver.Chrome(chrome_driver, chrome_options=options)
 	#chromeservice=Service(executable_path=chrome_driver)
 	#driver=webdriver.Chrome(service=chromeservice, options=options)
 	dp("chrome driver initialized...")
@@ -103,7 +109,11 @@ try:
 	# run chrome
 	driver.set_page_load_timeout(10)
 	dp("page parameters set")
-	driver.get(url)
+	try:
+		driver.get(url)
+	except TimeoutException as to_ex:
+		dp(f"FAILED TO GET URL: {to_ex} - refreshing")
+		driver.refresh()
 	dp("got url")
 	dp(f"sleeping for {run_time} seconds")
 	sleep(run_time)
@@ -125,15 +135,15 @@ except Exception as e:
 	try: 
 		display.stop()
 	except:
-		pass
+		dp("tried to stop display but failed..")
 	try:
 		driver.quit()
 	except:
-		pass
+		dp("tried to quit driver but failed....")
 	try:
 		proc.send_signal(signal.SIGINT)
 	except:
-		pass
+		dp("tried to send signal to rl process but failed")
 	
-	print(e)
+	LOG.error(e)
 
