@@ -30,9 +30,11 @@ RAND_RANGE = 1000
 SUMMARY_DIR = './results'
 LOG_FILE = './results/log'
 TEST_LOG_FOLDER = './test_results/'
-TRAIN_TRACES = './cooked_traces/'
-NN_MODEL = './results/nn_model_ep_14500.ckpt'
+TRAIN_TRACES = '/newhome/cooked_traces/'
+NN_MODEL = './results/nn_model_ep_2600.ckpt'
 #NN_MODEL = None
+
+MODEL_TRAINING_EPOCH_LIMIT = 20000
 
 REWARD = 'linear'
 
@@ -77,7 +79,10 @@ def testing(epoch, nn_model, log_file):
     log_file.flush()
 
 
-def central_agent(net_params_queues, exp_queues):
+
+
+
+def central_agent(net_params_queues, exp_queues, epoch_limit = MODEL_TRAINING_EPOCH_LIMIT):
 
     assert len(net_params_queues) == NUM_AGENTS
     assert len(exp_queues) == NUM_AGENTS
@@ -110,12 +115,12 @@ def central_agent(net_params_queues, exp_queues):
         epoch = 0
 
         # assemble experiences from agents, compute the gradients
-        while True:
+        while epoch < epoch_limit:
             # synchronize the network parameters of work agent
             actor_net_params = actor.get_network_params()
             critic_net_params = critic.get_network_params()
             for i in range(NUM_AGENTS):
-                net_params_queues[i].put([actor_net_params, critic_net_params])
+                net_params_queues[i].put([actor_net_params, critic_net_params, actor.get_entropy_weight()])
                 # Note: this is synchronous version of the parallel training,
                 # which is easier to understand and probe. The framework can be
                 # fairly easily modified to support asynchronous training.
@@ -189,16 +194,20 @@ def central_agent(net_params_queues, exp_queues):
 
             writer.add_summary(summary_str, epoch)
             writer.flush()
+            
+            # update the entropy
+            actor.set_entropy_weight(np.interp(epoch, [0, epoch_limit], [3, 0.01]))
 
             if epoch % MODEL_SAVE_INTERVAL == 0:
                 # Save the neural net parameters to disk.
                 save_path = saver.save(sess, SUMMARY_DIR + "/nn_model_ep_" +
                                        str(epoch) + ".ckpt")
                 logging.info("Model saved in file: " + save_path)
+                logging.info("Actor Entropy Weight: " + str(actor.get_entropy_weight()))
                 testing(epoch, 
                     SUMMARY_DIR + "/nn_model_ep_" + str(epoch) + ".ckpt", 
                     test_log_file)
-            print(f"epoch: {epoch}")
+            print(f"epoch: {epoch} TD_Loss: {avg_td_loss} Avg_reward: {avg_reward} Avg_entropy: {avg_entropy}")
 
 
 def agent(agent_id, all_cooked_time, all_cooked_bw, net_params_queue, exp_queue):
@@ -216,7 +225,8 @@ def agent(agent_id, all_cooked_time, all_cooked_bw, net_params_queue, exp_queue)
                                    learning_rate=CRITIC_LR_RATE)
 
         # initial synchronization of the network parameters from the coordinator
-        actor_net_params, critic_net_params = net_params_queue.get()
+        actor_net_params, critic_net_params, actor_entropy_weight = net_params_queue.get()
+        actor.set_entropy_weight(actor_entropy_weight)
         actor.set_network_params(actor_net_params)
         critic.set_network_params(critic_net_params)
 
@@ -314,7 +324,8 @@ def agent(agent_id, all_cooked_time, all_cooked_bw, net_params_queue, exp_queue)
                                {'entropy': entropy_record}])
 
                 # synchronize the network parameters from the coordinator
-                actor_net_params, critic_net_params = net_params_queue.get()
+                actor_net_params, critic_net_params, actor_entropy_weight = net_params_queue.get()
+                actor.set_entropy_weight(actor_entropy_weight)
                 actor.set_network_params(actor_net_params)
                 critic.set_network_params(critic_net_params)
 

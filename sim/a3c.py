@@ -5,7 +5,7 @@ import tflearn
 
 GAMMA = 0.99
 A_DIM = 6
-ENTROPY_WEIGHT = 0.1
+ENTROPY_WEIGHT = 5
 ENTROPY_EPS = 1e-6
 S_INFO = 4
 
@@ -23,6 +23,10 @@ class ActorNetwork(object):
 
         # Create the actor network
         self.inputs, self.out = self.create_actor_network()
+        
+        
+        # Set entropy weight
+        self.entropy_weight = ENTROPY_WEIGHT
 
         # Get all network parameters
         self.network_params = \
@@ -48,7 +52,7 @@ class ActorNetwork(object):
                        tf.log(tf.reduce_sum(tf.multiply(self.out, self.acts),
                                             reduction_indices=1, keep_dims=True)),
                        -self.act_grad_weights)) \
-                   + ENTROPY_WEIGHT * tf.reduce_sum(tf.multiply(self.out,
+                   + self.entropy_weight * tf.reduce_sum(tf.multiply(self.out,
                                                            tf.log(self.out + ENTROPY_EPS)))
 
         # Combine the gradients here
@@ -67,7 +71,7 @@ class ActorNetwork(object):
             split_2 = tflearn.conv_1d(inputs[:, 2:3, :], 128, 4, activation='relu')
             split_3 = tflearn.conv_1d(inputs[:, 3:4, :], 128, 4, activation='relu')
             split_4 = tflearn.conv_1d(inputs[:, 4:5, :A_DIM], 128, 4, activation='relu')
-            split_5 = tflearn.fully_connected(inputs[:, 4:5, -1], 128, activation='relu')
+            split_5 = tflearn.fully_connected(inputs[:, 5:6, -1], 128, activation='relu')
 
             split_2_flat = tflearn.flatten(split_2)
             split_3_flat = tflearn.flatten(split_3)
@@ -79,6 +83,12 @@ class ActorNetwork(object):
             out = tflearn.fully_connected(dense_net_0, self.a_dim, activation='softmax')
 
             return inputs, out
+        
+    def set_entropy_weight(self, entropy_weight):
+        self.entropy_weight = entropy_weight
+        
+    def get_entropy_weight(self):
+        return self.entropy_weight
 
     def train(self, inputs, acts, act_grad_weights):
 
@@ -165,7 +175,7 @@ class CriticNetwork(object):
             split_2 = tflearn.conv_1d(inputs[:, 2:3, :], 128, 4, activation='relu')
             split_3 = tflearn.conv_1d(inputs[:, 3:4, :], 128, 4, activation='relu')
             split_4 = tflearn.conv_1d(inputs[:, 4:5, :A_DIM], 128, 4, activation='relu')
-            split_5 = tflearn.fully_connected(inputs[:, 4:5, -1], 128, activation='relu')
+            split_5 = tflearn.fully_connected(inputs[:, 5:6, -1], 128, activation='relu')
 
             split_2_flat = tflearn.flatten(split_2)
             split_3_flat = tflearn.flatten(split_3)
