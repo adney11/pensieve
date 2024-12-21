@@ -57,7 +57,7 @@ import EventBus from './../core/EventBus';
 import Events from './../core/events/Events';
 import MediaPlayerEvents from './MediaPlayerEvents';
 import FactoryMaker from '../core/FactoryMaker';
-import {getVersionString} from './../core/Version';
+import { getVersionString } from './../core/Version';
 
 //Dash
 import DashAdapter from '../dash/DashAdapter';
@@ -155,7 +155,7 @@ function MediaPlayer() {
         dashManifestModel = DashManifestModel(context).getInstance();
         dashMetrics = DashMetrics(context).getInstance();
         metricsModel = MetricsModel(context).getInstance();
-        metricsModel.setConfig({adapter: createAdaptor()});
+        metricsModel.setConfig({ adapter: createAdaptor() });
 
         restoreDefaultUTCTimingSources();
         setAutoPlay(AutoPlay !== undefined ? AutoPlay : true);
@@ -492,7 +492,7 @@ function MediaPlayer() {
     function formatUTC(time, locales, hour12) {
         var dt = new Date(time * 1000);
         var d = dt.toLocaleDateString(locales);
-        var t = dt.toLocaleTimeString(locales, {hour12: hour12});
+        var t = dt.toLocaleTimeString(locales, { hour12: hour12 });
         return t + ' ' + d;
     }
 
@@ -1450,7 +1450,7 @@ function MediaPlayer() {
      * @memberof module:MediaPlayer
      * @instance
      */
-    function setBufferTimeAtTopQuality (value) {
+    function setBufferTimeAtTopQuality(value) {
         mediaPlayerModel.setBufferTimeAtTopQuality(value);
     }
 
@@ -1464,7 +1464,7 @@ function MediaPlayer() {
      * @memberof module:MediaPlayer
      * @instance
      */
-    function setBufferTimeAtTopQualityLongForm (value) {
+    function setBufferTimeAtTopQualityLongForm(value) {
         mediaPlayerModel.setBufferTimeAtTopQualityLongForm(value);
     }
 
@@ -1478,7 +1478,7 @@ function MediaPlayer() {
      * @memberof module:MediaPlayer
      * @instance
      */
-    function setLongFormContentDurationThreshold (value) {
+    function setLongFormContentDurationThreshold(value) {
         mediaPlayerModel.setLongFormContentDurationThreshold(value);
     }
 
@@ -1493,7 +1493,7 @@ function MediaPlayer() {
      * @memberof module:MediaPlayer
      * @instance
      */
-    function setRichBufferThreshold (value) {
+    function setRichBufferThreshold(value) {
         mediaPlayerModel.setRichBufferThreshold(value);
     }
 
@@ -1546,7 +1546,7 @@ function MediaPlayer() {
      * @memberof module:MediaPlayer
      * @instance
      */
-    function setFragmentLoaderRetryAttempts (value) {
+    function setFragmentLoaderRetryAttempts(value) {
         mediaPlayerModel.setFragmentRetryAttempts(value);
     }
 
@@ -1558,7 +1558,7 @@ function MediaPlayer() {
      * @memberof module:MediaPlayer
      * @instance
      */
-    function setFragmentLoaderRetryInterval (value) {
+    function setFragmentLoaderRetryInterval(value) {
         mediaPlayerModel.setFragmentRetryInterval(value);
     }
 
@@ -1613,7 +1613,7 @@ function MediaPlayer() {
      */
     function displayCaptionsOnTop(value) {
         let textTracks = TextTracks(context).getInstance();
-        textTracks.setConfig({videoModel: videoModel});
+        textTracks.setConfig({ videoModel: videoModel });
         textTracks.initialize();
         textTracks.displayCConTop(value);
     }
@@ -1793,7 +1793,7 @@ function MediaPlayer() {
         //scheduleRulesCollection.initialize();
 
         let sourceBufferController = SourceBufferController(context).getInstance();
-        sourceBufferController.setConfig({dashManifestModel: dashManifestModel});
+        sourceBufferController.setConfig({ dashManifestModel: dashManifestModel });
 
         mediaController.initialize();
         mediaController.setConfig({
@@ -1851,7 +1851,7 @@ function MediaPlayer() {
         //TODO-Refactor Need to be able to switch this create out so will need API to set which adapter to use? Handler is created is inside streamProcessor so need to figure that out as well
         adapter = DashAdapter(context).getInstance();
         adapter.initialize();
-        adapter.setConfig({dashManifestModel: dashManifestModel});
+        adapter.setConfig({ dashManifestModel: dashManifestModel });
         return adapter;
     }
 
